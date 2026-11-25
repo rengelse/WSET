@@ -1,0 +1,42 @@
+{
+  "name": "wset-editor",
+  "private": true,
+  "version": "1.0.2",
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "description": "Standalone Windows website editor (starts without a loaded website)",
+  "scripts": {
+    "designer": "electron designer/main.cjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:core": "node --test tests/project-library.test.mjs tests/workspace-rc18.test.mjs tests/inline-rc20.test.mjs tests/design-rc21.test.mjs tests/contextual-rc22.test.mjs tests/universal-rc23.test.mjs tests/property-workspace-rc25.test.mjs tests/property-separation-rc26.test.mjs tests/property-publication-rc27.test.mjs tests/media-workspace-rc29.test.mjs tests/media-replacement-rc30.test.mjs tests/media-lifecycle-rc31.test.mjs tests/language-workspace-rc32.test.mjs tests/property-drafts-rc33.test.mjs tests/property-draft-editor-rc34.test.mjs tests/property-owned-feed-rc35.test.mjs tests/property-markings-rc36.test.mjs tests/translation-engine-rc37.test.mjs tests/translation-rc38.test.mjs tests/translation-rc39.test.mjs tests/settings-workspace-rc40.test.mjs tests/server-manager-rc41.test.mjs tests/assistant-identity-rc42.test.mjs tests/server-publication-rc42.test.mjs tests/global-content-rc43.test.mjs tests/project-archive-rc43.1.test.mjs tests/template-contract-rc44.test.mjs tests/template-library-rc45.test.mjs tests/template-renderer-rc46.test.mjs tests/workspace-rc47.test.mjs tests/project-dashboard-rc48.test.mjs tests/template-gallery-rc49.test.mjs tests/project-lifecycle-rc50.test.mjs tests/template-compatibility-rc51.test.mjs tests/template-switching-rc52.test.mjs tests/template-versions-rc53.test.mjs tests/multi-template-qa-rc54.test.mjs tests/unified-workspace-rc55.test.mjs tests/app-packaging-rc56.test.mjs tests/application-updater-rc57.test.mjs tests/project-creation-v1.test.mjs",
+    "test:integration": "node --test tests/module-integration.test.mjs tests/split-project-archives.test.mjs",
+    "test:qa": "node --test tests/multi-template-qa-rc54.test.mjs",
+    "pack:win": "electron-builder --config electron-builder.cjs --win --x64 --dir --publish never",
+    "dist:win": "npm run dist",
+    "verify:release": "node scripts/verify-release.mjs",
+    "test:packaging": "node --test tests/app-packaging-rc56.test.mjs",
+    "dist": "electron-builder --config electron-builder.cjs --win nsis --x64 --publish never && node scripts/verify-release.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5",
+    "maplibre-gl": "5.15.0",
+    "ssh2": "1.17.0",
+    "basic-ftp": "6.2.6",
+    "electron-updater": "6.8.12"
+  },
+  "devDependencies": {
+    "electron": "45.4.1",
+    "electron-builder": "26.18.0"
+  },
+  "productName": "WSET",
+  "main": "designer/main.cjs",
+  "author": {
+    "name": "WSET"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rengelse/WSET.git"
+  }
+}

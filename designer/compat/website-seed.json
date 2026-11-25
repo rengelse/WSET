@@ -1,0 +1,1689 @@
+{
+  "services": [
+    {
+      "id": "interior",
+      "type": "interior",
+      "img": "interior",
+      "icon": "interior",
+      "title": {
+        "no": "Interiør og oppussing",
+        "en": "Interiors & renovation",
+        "es": "Interiorismo y reformas"
+      },
+      "desc": {
+        "no": "Fornye, forbedre eller tilpasse boligen – fra små grep til større oppgraderinger.",
+        "en": "Refresh and improve your home, from smaller changes to larger upgrades.",
+        "es": "Renueve y mejore su vivienda, desde pequeños cambios hasta grandes reformas."
+      },
+      "items": [
+        {
+          "no": "Innredning og overflater",
+          "en": "Styling and finishes",
+          "es": "Decoración y acabados"
+        },
+        {
+          "no": "Kjøkken, bad og gulv",
+          "en": "Kitchens, bathrooms and floors",
+          "es": "Cocinas, baños y suelos"
+        },
+        {
+          "no": "Planlegging og koordinering",
+          "en": "Planning and coordination",
+          "es": "Planificación y coordinación"
+        }
+      ],
+      "isSample": true
+    },
+    {
+      "id": "repairs",
+      "type": "maintenance",
+      "img": "repairs",
+      "icon": "wrench",
+      "title": {
+        "no": "Reparasjon og vedlikehold",
+        "en": "Repairs & maintenance",
+        "es": "Reparación y mantenimiento"
+      },
+      "desc": {
+        "no": "Praktisk hjelp når noe må fikses, vedlikeholdes eller rett og slett gjøres bedre.",
+        "en": "Practical help when something needs fixing, maintaining or improving.",
+        "es": "Ayuda práctica para reparar, mantener o mejorar su propiedad."
+      },
+      "items": [
+        {
+          "no": "Små reparasjoner",
+          "en": "Minor repairs",
+          "es": "Pequeñas reparaciones"
+        },
+        {
+          "no": "Maling og montering",
+          "en": "Painting and installation",
+          "es": "Pintura y montaje"
+        },
+        {
+          "no": "Løpende vedlikehold",
+          "en": "Ongoing maintenance",
+          "es": "Mantenimiento periódico"
+        }
+      ],
+      "isSample": true
+    },
+    {
+      "id": "electric",
+      "type": "technical",
+      "img": "electric",
+      "icon": "zap",
+      "title": {
+        "no": "Elektriske tjenester",
+        "en": "Electrical services",
+        "es": "Servicios eléctricos"
+      },
+      "desc": {
+        "no": "Utbedringer, installasjoner og feilsøking utført eller koordinert med kvalifiserte fagfolk.",
+        "en": "Improvements, installations and troubleshooting with qualified specialists.",
+        "es": "Mejoras, instalaciones y diagnósticos con profesionales cualificados."
+      },
+      "items": [
+        {
+          "no": "Elektriske installasjoner",
+          "en": "Electrical installations",
+          "es": "Instalaciones eléctricas"
+        },
+        {
+          "no": "Feilsøking og utbedring",
+          "en": "Fault-finding and repairs",
+          "es": "Diagnóstico y reparación"
+        },
+        {
+          "no": "Belysning og løsninger",
+          "en": "Lighting and solutions",
+          "es": "Iluminación y soluciones"
+        }
+      ],
+      "isSample": true
+    },
+    {
+      "id": "aircon",
+      "type": "technical",
+      "img": "aircon",
+      "icon": "wind",
+      "title": {
+        "no": "Aircondition og klima",
+        "en": "Air conditioning & climate",
+        "es": "Aire acondicionado y climatización"
+      },
+      "desc": {
+        "no": "Behagelig inneklima med hjelp til service, vedlikehold og tekniske tiltak.",
+        "en": "Keep interiors comfortable with service, maintenance and technical support.",
+        "es": "Confort interior mediante revisión, mantenimiento y asistencia técnica."
+      },
+      "items": [
+        {
+          "no": "Service og vedlikehold",
+          "en": "Servicing and maintenance",
+          "es": "Revisión y mantenimiento"
+        },
+        {
+          "no": "Installasjoner",
+          "en": "Installations",
+          "es": "Instalaciones"
+        },
+        {
+          "no": "Kontroll og oppfølging",
+          "en": "Checks and follow-up",
+          "es": "Inspección y seguimiento"
+        }
+      ],
+      "isSample": true
+    },
+    {
+      "id": "pool",
+      "type": "outdoor",
+      "img": "pool",
+      "icon": "wave",
+      "title": {
+        "no": "Basseng og uteområder",
+        "en": "Pool & outdoor areas",
+        "es": "Piscina y exteriores"
+      },
+      "desc": {
+        "no": "Fra terrasse og hage til basseng og uteområder som skal holde seg fine.",
+        "en": "From patios and gardens to pools and welcoming outdoor spaces.",
+        "es": "Desde terrazas y jardines hasta piscinas y zonas exteriores."
+      },
+      "items": [
+        {
+          "no": "Bassengoppfølging",
+          "en": "Pool care",
+          "es": "Cuidado de piscinas"
+        },
+        {
+          "no": "Hage og terrasse",
+          "en": "Garden and patio",
+          "es": "Jardín y terraza"
+        },
+        {
+          "no": "Sesongklargjøring",
+          "en": "Seasonal preparation",
+          "es": "Preparación estacional"
+        }
+      ],
+      "isSample": true
+    },
+    {
+      "id": "keys",
+      "type": "rental",
+      "img": "keys",
+      "icon": "key",
+      "title": {
+        "no": "Utleie og eiendomsdrift",
+        "en": "Rentals & property care",
+        "es": "Alquiler y gestión de inmuebles"
+      },
+      "desc": {
+        "no": "Klargjøring, nøkkelservice, tilsyn og praktisk oppfølging av boliger og gjester.",
+        "en": "Preparation, keyholding, inspections and practical guest support.",
+        "es": "Preparación, custodia de llaves, inspecciones y atención a huéspedes."
+      },
+      "items": [
+        {
+          "no": "Klargjøring og renhold",
+          "en": "Preparation and cleaning",
+          "es": "Preparación y limpieza"
+        },
+        {
+          "no": "Nøkler og gjesteoppfølging",
+          "en": "Keys and guest support",
+          "es": "Llaves y atención a huéspedes"
+        },
+        {
+          "no": "Tilsyn og eieroppfølging",
+          "en": "Checks and owner updates",
+          "es": "Inspecciones e informes al propietario"
+        }
+      ],
+      "isSample": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "kitchen",
+      "type": "interior",
+      "img": "project-after",
+      "title": {
+        "no": "Oppgradering av kjøkken",
+        "en": "Kitchen refresh",
+        "es": "Renovación de cocina"
+      },
+      "place": {
+        "no": "Interiør · Eksempelprosjekt",
+        "en": "Interiors · Demo project",
+        "es": "Interiorismo · Proyecto de muestra"
+      },
+      "desc": {
+        "no": "Slik kan vi presentere et oppdrag med fremdrift, før/etter-bilder og resultat.",
+        "en": "An example of a project with progress, before/after images and results.",
+        "es": "Ejemplo de proyecto con avances, imágenes de antes/después y resultados."
+      },
+      "isSample": true,
+      "beforeUrl": "/assets/project-before.webp",
+      "afterUrl": "/assets/project-after.webp",
+      "gallery": [
+        "/assets/project-before.webp",
+        "/assets/project-after.webp",
+        "/assets/project-terrace.webp"
+      ],
+      "featuredOnHome": true
+    },
+    {
+      "id": "terrace",
+      "type": "outdoor",
+      "img": "project-terrace",
+      "title": {
+        "no": "Terrasse med nye muligheter",
+        "en": "A patio with new possibilities",
+        "es": "Una terraza con nuevas posibilidades"
+      },
+      "place": {
+        "no": "Uteområde · Eksempelprosjekt",
+        "en": "Outdoor · Demo project",
+        "es": "Exterior · Proyecto de muestra"
+      },
+      "desc": {
+        "no": "Fra uteplass med behov for oppgradering til et trivelig område for bruk.",
+        "en": "From a tired outdoor space to a welcoming patio.",
+        "es": "De una zona exterior anticuada a una terraza acogedora."
+      },
+      "isSample": true,
+      "gallery": [
+        "/assets/project-terrace.webp"
+      ]
+    },
+    {
+      "id": "bathroom",
+      "type": "interior",
+      "img": "project-bathroom",
+      "title": {
+        "no": "Detaljene som løfter badet",
+        "en": "Bathroom finishing details",
+        "es": "Detalles para renovar el baño"
+      },
+      "place": {
+        "no": "Interiør · Eksempelprosjekt",
+        "en": "Interiors · Demo project",
+        "es": "Interiorismo · Proyecto de muestra"
+      },
+      "desc": {
+        "no": "Materialvalg, planlegging og koordinering samlet i ett prosjekt.",
+        "en": "Materials, planning and coordination in one project.",
+        "es": "Materiales, planificación y coordinación en un proyecto."
+      },
+      "isSample": true,
+      "gallery": [
+        "/assets/project-bathroom.webp"
+      ]
+    },
+    {
+      "id": "pool",
+      "type": "outdoor",
+      "img": "project-pool",
+      "title": {
+        "no": "Basseng og uteplass",
+        "en": "Pool and outdoor space",
+        "es": "Piscina y espacio exterior"
+      },
+      "place": {
+        "no": "Vedlikehold · Eksempelprosjekt",
+        "en": "Maintenance · Demo project",
+        "es": "Mantenimiento · Proyecto de muestra"
+      },
+      "desc": {
+        "no": "Hvordan vedlikehold og klargjøring kan vises visuelt.",
+        "en": "A visual example of maintenance and seasonal preparation.",
+        "es": "Ejemplo visual de mantenimiento y preparación estacional."
+      },
+      "isSample": true,
+      "gallery": [
+        "/assets/project-pool.webp"
+      ]
+    },
+    {
+      "id": "preparation",
+      "type": "rental",
+      "img": "keys",
+      "title": {
+        "no": "Klargjøring for gjester",
+        "en": "Guest-ready preparation",
+        "es": "Preparación para huéspedes"
+      },
+      "place": {
+        "no": "Utleie · Eksempelprosjekt",
+        "en": "Rental · Demo project",
+        "es": "Alquiler · Proyecto de muestra"
+      },
+      "desc": {
+        "no": "Et eksempel på hvordan rengjøring, tilsyn og overlevering kan dokumenteres.",
+        "en": "A demo of how cleaning, checks and handover may be documented.",
+        "es": "Ejemplo de documentación de limpieza, revisión y entrega."
+      },
+      "isSample": true,
+      "gallery": [
+        "/assets/keys.webp"
+      ]
+    },
+    {
+      "id": "repair",
+      "type": "maintenance",
+      "img": "repairs",
+      "title": {
+        "no": "Praktisk utbedring",
+        "en": "Practical improvements",
+        "es": "Mejoras prácticas"
+      },
+      "place": {
+        "no": "Vedlikehold · Eksempelprosjekt",
+        "en": "Maintenance · Demo project",
+        "es": "Mantenimiento · Proyecto de muestra"
+      },
+      "desc": {
+        "no": "Små oppdrag kan være like viktige å vise frem som store.",
+        "en": "Small jobs can be just as worth showing as large projects.",
+        "es": "Los pequeños trabajos también merecen ser mostrados."
+      },
+      "isSample": true,
+      "gallery": [
+        "/assets/repairs.webp"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "head": {
+        "no": "Trygg oppfølging når vi er borte",
+        "en": "Reliable care while away",
+        "es": "Tranquilidad cuando estamos lejos"
+      },
+      "body": {
+        "no": "Her kan en kunde senere beskrive hvordan regelmessig boligtilsyn skaper trygghet når de ikke er i Spania.",
+        "en": "A future customer may describe the peace of mind they get from regular property checks while away from Spain.",
+        "es": "Un futuro cliente podría contar la tranquilidad que le dan las inspecciones periódicas cuando no está en España."
+      },
+      "by": {
+        "no": "Boligtilsyn · Eksempel",
+        "en": "Property checks · Sample",
+        "es": "Inspección · Ejemplo"
+      },
+      "isSample": true,
+      "id": "review-1"
+    },
+    {
+      "head": {
+        "no": "Hjelp fra idé til ferdig arbeid",
+        "en": "Help from idea to completion",
+        "es": "Ayuda desde la idea hasta el final"
+      },
+      "body": {
+        "no": "Her kan en kunde dele sin erfaring med planlegging, oppussing og god kommunikasjon underveis.",
+        "en": "A future customer may share their experience of renovation planning and clear communication throughout.",
+        "es": "Un futuro cliente podría compartir su experiencia con la planificación de reformas y la comunicación durante el proceso."
+      },
+      "by": {
+        "no": "Oppussing · Eksempel",
+        "en": "Renovation · Sample",
+        "es": "Reformas · Ejemplo"
+      },
+      "isSample": true,
+      "id": "review-2"
+    },
+    {
+      "head": {
+        "no": "Boligen klar til ankomst",
+        "en": "A home ready on arrival",
+        "es": "La vivienda lista al llegar"
+      },
+      "body": {
+        "no": "Her kan vi presentere en reell omtale om renhold, nøkkelhåndtering og klargjøring før ferien.",
+        "en": "This space can present a real testimonial about cleaning, keyholding and holiday preparation.",
+        "es": "Aquí podrá publicarse una opinión real sobre limpieza, custodia de llaves y preparación antes de las vacaciones."
+      },
+      "by": {
+        "no": "Utleie og drift · Eksempel",
+        "en": "Rentals & care · Sample",
+        "es": "Alquiler y gestión · Ejemplo"
+      },
+      "isSample": true,
+      "id": "review-3"
+    },
+    {
+      "head": {
+        "no": "En løsning for små oppgaver",
+        "en": "The small jobs matter too",
+        "es": "Los pequeños trabajos importan"
+      },
+      "body": {
+        "no": "Et fremtidig sitat kan vise hvordan en mindre reparasjon ble løst effektivt og ordentlig.",
+        "en": "A real future comment may show how a small repair was handled efficiently and professionally.",
+        "es": "Una opinión futura podrá mostrar cómo se resolvió una pequeña reparación con eficacia."
+      },
+      "by": {
+        "no": "Reparasjon · Eksempel",
+        "en": "Repairs · Sample",
+        "es": "Reparación · Ejemplo"
+      },
+      "isSample": true,
+      "id": "review-4"
+    },
+    {
+      "head": {
+        "no": "Tett og personlig kontakt",
+        "en": "Personal and responsive",
+        "es": "Atención cercana y personal"
+      },
+      "body": {
+        "no": "Her kan kunden fortelle om tilgjengelighet, fremdrift og hvordan CBPM fulgte opp oppdraget.",
+        "en": "A future customer can describe communication, availability and project updates from CBPM.",
+        "es": "Un futuro cliente podrá hablar sobre comunicación, disponibilidad y seguimiento del trabajo."
+      },
+      "by": {
+        "no": "Kundeservice · Eksempel",
+        "en": "Customer care · Sample",
+        "es": "Atención al cliente · Ejemplo"
+      },
+      "isSample": true,
+      "id": "review-5"
+    }
+  ],
+  "brand": {
+    "shortName": "CBPM",
+    "displayName": "Costa Blanca Property Management",
+    "legalName": "",
+    "logoSubtitle": "COSTA BLANCA PROPERTY MANAGEMENT",
+    "phone": "",
+    "email": "",
+    "whatsapp": "",
+    "area": "Costa Blanca, Alicante, España",
+    "images": {}
+  },
+  "languages": [
+    {
+      "code": "no",
+      "name": "Norsk",
+      "short": "NO",
+      "subtitle": "Norsk bokmål",
+      "flag": "🇳🇴",
+      "enabled": true,
+      "order": 0
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "short": "EN",
+      "subtitle": "English (UK)",
+      "flag": "🇬🇧",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "code": "es",
+      "name": "Español",
+      "short": "ES",
+      "subtitle": "Español (España)",
+      "flag": "🇪🇸",
+      "enabled": true,
+      "order": 2
+    }
+  ],
+  "pages": {
+    "home": {
+      "heroTitle": {
+        "no": "Vi tar vare på<br>boligen din.<br><em>Hele året.</em>",
+        "en": "We take care<br>of your home.<br><em>All year round.</em>",
+        "es": "Cuidamos de<br>su vivienda.<br><em>Todo el año.</em>"
+      },
+      "heroIntro": {
+        "no": "Vedlikehold, oppussing, tekniske tjenester og utleiehåndtering – for alle typer boliger på Costa Blanca.",
+        "en": "Maintenance, renovation, technical services and rental support – for every kind of home on the Costa Blanca.",
+        "es": "Mantenimiento, reformas, servicios técnicos y gestión de alquileres para todo tipo de viviendas en la Costa Blanca."
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "interior",
+      "title": {
+        "no": "Interiør",
+        "en": "Interiors",
+        "es": "Interiorismo"
+      },
+      "enabled": true,
+      "order": 10
+    },
+    {
+      "id": "maintenance",
+      "title": {
+        "no": "Vedlikehold",
+        "en": "Maintenance",
+        "es": "Mantenimiento"
+      },
+      "enabled": true,
+      "order": 20
+    },
+    {
+      "id": "technical",
+      "title": {
+        "no": "Teknisk",
+        "en": "Technical",
+        "es": "Técnico"
+      },
+      "enabled": true,
+      "order": 30
+    },
+    {
+      "id": "outdoor",
+      "title": {
+        "no": "Uteområder",
+        "en": "Outdoors",
+        "es": "Exteriores"
+      },
+      "enabled": true,
+      "order": 40
+    },
+    {
+      "id": "rental",
+      "title": {
+        "no": "Utleie",
+        "en": "Rentals",
+        "es": "Alquiler"
+      },
+      "enabled": true,
+      "order": 50
+    }
+  ],
+  "features": {
+    "homeServices": true,
+    "homeProjects": true,
+    "homeReviews": true,
+    "homeTeam": true
+  },
+  "schemaVersion": 1,
+  "sitePages": [
+    {
+      "id": "home",
+      "slug": "home",
+      "enabled": true,
+      "showInNavigation": true,
+      "order": 0,
+      "title": {
+        "no": "Hjem",
+        "en": "Home",
+        "es": "Inicio"
+      },
+      "sections": [
+        {
+          "id": "home-hero",
+          "type": "template",
+          "source": "home",
+          "slot": "hero",
+          "enabled": true
+        },
+        {
+          "id": "home-trust",
+          "type": "template",
+          "source": "home",
+          "slot": "trust",
+          "enabled": true
+        },
+        {
+          "id": "home-services",
+          "type": "template",
+          "source": "home",
+          "slot": "services",
+          "enabled": true
+        },
+        {
+          "id": "home-why",
+          "type": "template",
+          "source": "home",
+          "slot": "why",
+          "enabled": true
+        },
+        {
+          "id": "home-projects",
+          "type": "template",
+          "source": "home",
+          "slot": "projects",
+          "enabled": true
+        },
+        {
+          "id": "home-reviews",
+          "type": "template",
+          "source": "home",
+          "slot": "reviews",
+          "enabled": true
+        },
+        {
+          "id": "home-team",
+          "type": "template",
+          "source": "home",
+          "slot": "team",
+          "enabled": true
+        },
+        {
+          "id": "home-cta",
+          "type": "template",
+          "source": "home",
+          "slot": "cta",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "slug": "services",
+      "enabled": true,
+      "showInNavigation": true,
+      "order": 10,
+      "title": {
+        "no": "Tjenester",
+        "en": "Services",
+        "es": "Servicios"
+      },
+      "sections": [
+        {
+          "id": "services-hero",
+          "type": "template",
+          "source": "services",
+          "slot": "hero",
+          "enabled": true
+        },
+        {
+          "id": "services-listing",
+          "type": "template",
+          "source": "services",
+          "slot": "listing",
+          "enabled": true
+        },
+        {
+          "id": "services-faq",
+          "type": "template",
+          "source": "services",
+          "slot": "faq",
+          "enabled": true
+        },
+        {
+          "id": "services-cta",
+          "type": "template",
+          "source": "services",
+          "slot": "cta",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "rental",
+      "slug": "rental",
+      "enabled": true,
+      "showInNavigation": true,
+      "order": 20,
+      "title": {
+        "no": "Utleie og drift",
+        "en": "Rentals & care",
+        "es": "Alquiler y gestión"
+      },
+      "sections": [
+        {
+          "id": "rental-hero",
+          "type": "template",
+          "source": "rental",
+          "slot": "hero",
+          "enabled": true
+        },
+        {
+          "id": "rental-overview",
+          "type": "template",
+          "source": "rental",
+          "slot": "overview",
+          "enabled": true
+        },
+        {
+          "id": "rental-process",
+          "type": "template",
+          "source": "rental",
+          "slot": "process",
+          "enabled": true
+        },
+        {
+          "id": "rental-cta",
+          "type": "template",
+          "source": "rental",
+          "slot": "cta",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "slug": "projects",
+      "enabled": true,
+      "showInNavigation": true,
+      "order": 30,
+      "title": {
+        "no": "Prosjekter",
+        "en": "Projects",
+        "es": "Proyectos"
+      },
+      "sections": [
+        {
+          "id": "projects-hero",
+          "type": "template",
+          "source": "projects",
+          "slot": "hero",
+          "enabled": true
+        },
+        {
+          "id": "projects-listing",
+          "type": "template",
+          "source": "projects",
+          "slot": "listing",
+          "enabled": true
+        },
+        {
+          "id": "projects-cta",
+          "type": "template",
+          "source": "projects",
+          "slot": "cta",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "reviews",
+      "slug": "reviews",
+      "enabled": true,
+      "showInNavigation": true,
+      "order": 40,
+      "title": {
+        "no": "Hva våre kunder sier",
+        "en": "Testimonials",
+        "es": "Opiniones"
+      },
+      "sections": [
+        {
+          "id": "reviews-hero",
+          "type": "template",
+          "source": "reviews",
+          "slot": "hero",
+          "enabled": true
+        },
+        {
+          "id": "reviews-listing",
+          "type": "template",
+          "source": "reviews",
+          "slot": "listing",
+          "enabled": true
+        },
+        {
+          "id": "reviews-share",
+          "type": "template",
+          "source": "reviews",
+          "slot": "share",
+          "enabled": true
+        },
+        {
+          "id": "reviews-cta",
+          "type": "template",
+          "source": "reviews",
+          "slot": "cta",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "slug": "about",
+      "enabled": true,
+      "showInNavigation": true,
+      "order": 50,
+      "title": {
+        "no": "Om oss",
+        "en": "About us",
+        "es": "Nosotros"
+      },
+      "sections": [
+        {
+          "id": "about-hero",
+          "type": "template",
+          "source": "about",
+          "slot": "hero",
+          "enabled": true
+        },
+        {
+          "id": "about-intro",
+          "type": "template",
+          "source": "about",
+          "slot": "intro",
+          "enabled": true
+        },
+        {
+          "id": "about-values",
+          "type": "template",
+          "source": "about",
+          "slot": "values",
+          "enabled": true
+        },
+        {
+          "id": "about-team",
+          "type": "template",
+          "source": "about",
+          "slot": "team",
+          "enabled": true
+        },
+        {
+          "id": "about-cta",
+          "type": "template",
+          "source": "about",
+          "slot": "cta",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "slug": "contact",
+      "enabled": true,
+      "showInNavigation": true,
+      "order": 60,
+      "title": {
+        "no": "Kontakt",
+        "en": "Contact",
+        "es": "Contacto"
+      },
+      "sections": [
+        {
+          "id": "contact-hero",
+          "type": "template",
+          "source": "contact",
+          "slot": "hero",
+          "enabled": true
+        },
+        {
+          "id": "contact-form",
+          "type": "template",
+          "source": "contact",
+          "slot": "form",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "properties",
+      "slug": "eiendommer",
+      "enabled": false,
+      "showInNavigation": true,
+      "order": 70,
+      "title": {
+        "no": "Eiendommer",
+        "en": "Properties",
+        "es": "Inmuebles"
+      },
+      "sections": []
+    }
+  ],
+  "defaultLanguage": "no",
+  "team": [
+    {
+      "id": "demo-elena-martin",
+      "name": "Elena Martín",
+      "role": {
+        "no": "Prosjektleder",
+        "en": "Project manager",
+        "es": "Responsable de proyectos",
+        "de": "Projektleiterin",
+        "da": "Projektleder",
+        "fi": "Projektipäällikkö",
+        "fr": "Cheffe de projet",
+        "nl": "Projectleider",
+        "pl": "Kierowniczka projektu",
+        "sv": "Projektledare",
+        "ru": "Руководитель проектов"
+      },
+      "description": {
+        "no": "Prosjektkoordinering og oppfølging av eiendommer. Fiktiv eksempelprofil.",
+        "en": "Project coordination and property follow-up. Fictional sample profile.",
+        "es": "Coordinación de proyectos y seguimiento de propiedades. Perfil ficticio.",
+        "de": "Project coordination and property follow-up. Fictional sample profile.",
+        "da": "Project coordination and property follow-up. Fictional sample profile.",
+        "fi": "Project coordination and property follow-up. Fictional sample profile.",
+        "fr": "Project coordination and property follow-up. Fictional sample profile.",
+        "nl": "Project coordination and property follow-up. Fictional sample profile.",
+        "pl": "Project coordination and property follow-up. Fictional sample profile.",
+        "sv": "Project coordination and property follow-up. Fictional sample profile.",
+        "ru": "Project coordination and property follow-up. Fictional sample profile."
+      },
+      "portrait": "/assets/demo-team-elena-martin.webp",
+      "phone": "",
+      "email": "",
+      "whatsapp": "",
+      "spokenLanguages": "es,en,no",
+      "isSample": true,
+      "enabled": true,
+      "isVisible": true,
+      "order": 10
+    },
+    {
+      "id": "demo-magnus-berg",
+      "name": "Magnus Berg",
+      "role": {
+        "no": "Driftsansvarlig",
+        "en": "Operations manager",
+        "es": "Responsable de operaciones",
+        "de": "Betriebsleiter",
+        "da": "Driftsleder",
+        "fi": "Toimintapäällikkö",
+        "fr": "Responsable des opérations",
+        "nl": "Operationeel manager",
+        "pl": "Kierownik operacyjny",
+        "sv": "Driftansvarig",
+        "ru": "Операционный менеджер"
+      },
+      "description": {
+        "no": "Planlegging av vedlikehold og praktiske oppgaver. Fiktiv eksempelprofil.",
+        "en": "Maintenance planning and practical tasks. Fictional sample profile.",
+        "es": "Planificación del mantenimiento y trabajos prácticos. Perfil ficticio.",
+        "de": "Maintenance planning and practical tasks. Fictional sample profile.",
+        "da": "Maintenance planning and practical tasks. Fictional sample profile.",
+        "fi": "Maintenance planning and practical tasks. Fictional sample profile.",
+        "fr": "Maintenance planning and practical tasks. Fictional sample profile.",
+        "nl": "Maintenance planning and practical tasks. Fictional sample profile.",
+        "pl": "Maintenance planning and practical tasks. Fictional sample profile.",
+        "sv": "Maintenance planning and practical tasks. Fictional sample profile.",
+        "ru": "Maintenance planning and practical tasks. Fictional sample profile."
+      },
+      "portrait": "/assets/demo-team-magnus-berg.webp",
+      "phone": "",
+      "email": "",
+      "whatsapp": "",
+      "spokenLanguages": "no,en,es",
+      "isSample": true,
+      "enabled": true,
+      "isVisible": true,
+      "order": 20
+    },
+    {
+      "id": "demo-daniel-ruiz",
+      "name": "Daniel Ruiz",
+      "role": {
+        "no": "Teknisk ansvarlig",
+        "en": "Technical coordinator",
+        "es": "Coordinador técnico",
+        "de": "Technischer Koordinator",
+        "da": "Teknisk koordinator",
+        "fi": "Tekninen koordinaattori",
+        "fr": "Coordinateur technique",
+        "nl": "Technisch coördinator",
+        "pl": "Koordynator techniczny",
+        "sv": "Teknisk samordnare",
+        "ru": "Технический координатор"
+      },
+      "description": {
+        "no": "Teknisk oppfølging og koordinering av håndverkere. Fiktiv eksempelprofil.",
+        "en": "Technical follow-up and contractor coordination. Fictional sample profile.",
+        "es": "Seguimiento técnico y coordinación de profesionales. Perfil ficticio.",
+        "de": "Technical follow-up and contractor coordination. Fictional sample profile.",
+        "da": "Technical follow-up and contractor coordination. Fictional sample profile.",
+        "fi": "Technical follow-up and contractor coordination. Fictional sample profile.",
+        "fr": "Technical follow-up and contractor coordination. Fictional sample profile.",
+        "nl": "Technical follow-up and contractor coordination. Fictional sample profile.",
+        "pl": "Technical follow-up and contractor coordination. Fictional sample profile.",
+        "sv": "Technical follow-up and contractor coordination. Fictional sample profile.",
+        "ru": "Technical follow-up and contractor coordination. Fictional sample profile."
+      },
+      "portrait": "/assets/demo-team-daniel-ruiz.webp",
+      "phone": "",
+      "email": "",
+      "whatsapp": "",
+      "spokenLanguages": "es,en",
+      "isSample": true,
+      "enabled": true,
+      "isVisible": true,
+      "order": 30
+    },
+    {
+      "id": "demo-sofia-lund",
+      "name": "Sofia Lund",
+      "role": {
+        "no": "Kundeservice",
+        "en": "Customer service",
+        "es": "Atención al cliente",
+        "de": "Kundenservice",
+        "da": "Kundeservice",
+        "fi": "Asiakaspalvelu",
+        "fr": "Service client",
+        "nl": "Klantenservice",
+        "pl": "Obsługa klienta",
+        "sv": "Kundservice",
+        "ru": "Обслуживание клиентов"
+      },
+      "description": {
+        "no": "Kundedialog og oppfølging av henvendelser. Fiktiv eksempelprofil.",
+        "en": "Customer communication and enquiry follow-up. Fictional sample profile.",
+        "es": "Comunicación con clientes y seguimiento de consultas. Perfil ficticio.",
+        "de": "Customer communication and enquiry follow-up. Fictional sample profile.",
+        "da": "Customer communication and enquiry follow-up. Fictional sample profile.",
+        "fi": "Customer communication and enquiry follow-up. Fictional sample profile.",
+        "fr": "Customer communication and enquiry follow-up. Fictional sample profile.",
+        "nl": "Customer communication and enquiry follow-up. Fictional sample profile.",
+        "pl": "Customer communication and enquiry follow-up. Fictional sample profile.",
+        "sv": "Customer communication and enquiry follow-up. Fictional sample profile.",
+        "ru": "Customer communication and enquiry follow-up. Fictional sample profile."
+      },
+      "portrait": "/assets/demo-team-sofia-lund.webp",
+      "phone": "",
+      "email": "",
+      "whatsapp": "",
+      "spokenLanguages": "no,en,es",
+      "isSample": true,
+      "enabled": true,
+      "isVisible": true,
+      "order": 40
+    }
+  ],
+  "media": {
+    "items": []
+  },
+  "templateTexts": {},
+  "contactForm": {
+    "mode": "demo",
+    "privacyUrl": ""
+  },
+  "i18n": {
+    "version": 1,
+    "ui": {
+      "no": {
+        "ui.test-the-form.b328b3c1": "Test skjema",
+        "ui.i-understand-this-is-an-inactive-demonstration-f.fe688919": "Jeg er innforstått med at dette er en uaktivert demoversjon.",
+        "ui.tell-us-a-little-about-the-property-and-what-you.de354102": "Fortell oss litt om boligen og hva du ønsker hjelp med …",
+        "ui.describe-your-needs.096c52d9": "Beskriv oppgaven",
+        "ui.other.a6b84ecf": "Annet",
+        "ui.choose-a-service.f2d5e7b8": "Velg område",
+        "ui.what-is-it-about.1d42a238": "Hva gjelder det?",
+        "ui.phone.9310f793": "Telefon",
+        "ui.email.1295ad74": "E-post",
+        "ui.your-name.57373ced": "Ditt navn",
+        "ui.name.083f39b5": "Navn",
+        "ui.demo-only-nothing-is-sent-or-stored.e55e8a62": "Demofunksjon: Ingenting sendes eller lagres.",
+        "ui.send-an-enquiry.c23ae1a4": "Send en forespørsel",
+        "ui.added-at-launch.a4437da7": "Kommer ved lansering",
+        "ui.phone-whatsapp.d14d3883": "TELEFON / WHATSAPP",
+        "ui.area.a7e05f07": "OMRÅDE",
+        "ui.the-contact-form-is-designed-but-does-not-send-d.429095ab": "Nettsidens kontaktskjema er ferdig designet, men sender ingen data i mockupen. Her kommer selskapets ekte telefon, e-post og WhatsApp før lansering.",
+        "ui.lets-find-em-a-solution-em.5910ef6b": "La oss finne <em>en løsning.</em>",
+        "ui.wed-love-to-hear-from-you.d73c764f": "VI HØRER GJERNE FRA DEG",
+        "ui.a-small-repair-a-larger-project-or-ongoing-prope.6311a5da": "En liten reparasjon, et nytt prosjekt eller løpende tilsyn? Beskriv hva du trenger hjelp med.",
+        "ui.tell-us-about-em-your-property-em.aa377edc": "Fortell oss om <em>boligen din.</em>",
+        "ui.leave-a-review.fbd3d0f3": "Gi en vurdering",
+        "ui.this-is-where-the-companys-google-review-link-wi.38545655": "Her legger vi inn lenke til firmaets Google-bedriftsprofil når den er opprettet.",
+        "ui.worked-with-em-cbpm-em.0c7b1460": "Har du brukt <em>CBPM?</em>",
+        "ui.share-your-experience.d6036810": "DEL DIN OPPLEVELSE",
+        "ui.the-future-content-editor-will-be-able-to-publis.ddea0f45": "Administrator skal senere kunne publisere, oversette og knytte ekte omtaler til relevante prosjekter.",
+        "ui.approved-testimonials-will-appear-here.388d00fb": "Kundeomtaler legges til her når de er godkjent.",
+        "ui.the-statements-below-are-placeholder-text-not-re.6b6d62ac": "Uttalelsene under er eksempeltekst, ikke faktiske anmeldelser. Stjerner og Google-kilde vises først når autentiske vurderinger finnes.",
+        "ui.trust-grows-em-over-time-em.15cb05a4": "Tillit skapes <em>over tid.</em>",
+        "ui.customer-stories.0b33208f": "KUNDEHISTORIER",
+        "ui.genuine-customer-experiences-will-be-a-highlight.616b0a81": "Ekte erfaringer vil være noe av det viktigste på denne siden. Vi gir dem god plass – med navn og bilder der kunden samtykker.",
+        "ui.what-our-em-customers-say-em.99283de3": "Hva våre <em>kunder sier.</em>",
+        "ui.real-portraits-names-areas-of-expertise-and-intr.ccd44617": "Her kommer ekte portrettbilder, navn, fagkompetanse og presentasjoner når teamet er etablert.",
+        "ui.the-faces-behind-em-the-work-em.054b7ff6": "Ansiktene bak <em>arbeidet.</em>",
+        "ui.meet-the-team.c1bea822": "MØT TEAMET",
+        "ui.good-work-em-no-fuss-em.d9bd552e": "Ordentlig arbeid. <em>Rett frem.</em>",
+        "ui.what-matters-to-us.143f80d0": "DET VI STÅR FOR",
+        "ui.mediterranean-setting-illustration.6ead6459": "Middelhavsmiljø, illustrasjonsbilde",
+        "ui.cbpm-costa-blanca-property-management-aims-to-be.73f5745d": "CBPM – Costa Blanca Property Management skal være en naturlig samarbeidspartner for boligeiere som trenger praktisk hjelp, vedlikehold og oppfølging. Ekte historie, erfaring og medarbeidere fylles inn når selskapet er klart.",
+        "ui.from-small-fixes-to-em-big-improvements-em.2f764c90": "Fra små grep til <em>store forbedringer.</em>",
+        "ui.who-we-are.9b24ba9b": "HVEM VI ER",
+        "ui.a-service-company-built-around-good-relationship.78f8ac6c": "Et servicefirma som skal bli kjent for gode relasjoner, gjennomført arbeid og tilgjengelighet.",
+        "ui.the-people-behind-em-cbpm-em.1b0dd92e": "Menneskene bak <em>CBPM.</em>",
+        "ui.the-size-of-a-property-does-not-determine-the-im.42559685": "Det er ikke størrelsen på eiendommen som avgjør hvor viktig oppgaven er.",
+        "ui.care-for-your-home.fbb63988": "Omsorg for boligen",
+        "ui.each-task-requires-the-right-skills-clear-agreem.6ca5ce87": "Hver oppgave krever riktig kompetanse, gode avtaler og forutsigbar oppfølging.",
+        "ui.professional-care.75fcf913": "Faglig ansvar",
+        "ui.clear-approachable-communication-even-while-the.ac5729ed": "Vi ønsker at kontakt og kommunikasjon skal være enkel, også når eier ikke er i Spania.",
+        "ui.close-by.fb83de2b": "Tett på",
+        "ui.sample.eb9e76ea": "EKSEMPEL",
+        "ui.portrait-coming.00b0d8ad": "PORTRETT KOMMER",
+        "ui.name-role-and-introduction-to-be-added-once-avai.18d8a229": "Navn, rolle og presentasjon legges inn når informasjonen er klar.",
+        "ui.real-portrait-coming-soon.b52c08bc": "EKTE PORTRETT KOMMER",
+        "ui.rentals-property-care.fb40d71a": "Utleie og eiendomstilsyn",
+        "ui.maintenance-technical-services.d42f9c98": "Vedlikehold og tekniske fag",
+        "ui.management-customer-contact.429f0d10": "Ledelse og kundekontakt",
+        "ui.ask-about-a-similar-job.3a6304af": "Spør oss om en lignende jobb",
+        "ui.this-is-an-illustration-of-a-project-page-not-a.981f7561": "Dette er et illustrert eksempel på hvordan et prosjekt kan presenteres, ikke et dokumentert kundeoppdrag.",
+        "ui.our-work.192b5b08": "VÅRT ARBEID",
+        "ui.sample-project.cd31fb09": "EKSEMPELPROSJEKT",
+        "ui.back-to-projects.07baa4d1": "Tilbake til prosjekter",
+        "ui.these-pictures-illustrate-a-design-concept-not-c.29049c04": "Bildene viser et designkonsept, ikke utførte CBPM-oppdrag. Ekte prosjekter og før/etter-bilder legges inn etter hvert.",
+        "ui.a-selection-of-our-projects.ff16b70f": "Et utvalg av prosjektene våre.",
+        "ui.these-project-cards-are-examples-of-future-conte.6199510f": "Disse prosjektkortene er eksempler på fremtidig innhold.",
+        "ui.from-idea-to-em-finished-em.659933d4": "Fra idé til <em>ferdig.</em>",
+        "ui.project-gallery.95e33d8d": "PROSJEKTGALLERI",
+        "ui.good-photos-make-work-easy-to-understand-project.cd3d4cfa": "Gode bilder gjør jobben enklere å forstå. Her får prosjektene sine egne historier, bilder og beskrivelser.",
+        "ui.the-work-em-behind-the-result-em.0d469718": "Arbeidet <em>bak resultatet.</em>",
+        "ui.view-project.dd570e5c": "Se prosjektsiden",
+        "ui.design-demo.1c5aa6d5": "DESIGNDEMO",
+        "ui.holiday-lets-and-rental-management-must-comply-w.86de87c1": "Turistutleie og eventuell formidling må tilpasses lokale tillatelser, registreringer og andre rettslige krav. Dette avklares før tjenesten tilbys.",
+        "ui.for-rentals-in-spain.6375bded": "For utleie i Spania:",
+        "ui.an-example-of-how-the-property-can-be-supported.e961fef7": "Et eksempel på hvordan vi kan følge opp boligen gjennom et opphold.",
+        "ui.before-during-em-after-em.99a5003c": "Før. Under. <em>Etter.</em>",
+        "ui.a-simple-process.89dcf7ea": "EN ENKEL PROSESS",
+        "ui.property-checks-and-documented-updates.ba4b1db0": "Eiendomstilsyn og dokumentert oppfølging",
+        "ui.keys-check-in-and-practical-support.5aab18fc": "Nøkler, innsjekk og praktisk støtte",
+        "ui.preparation-before-owners-or-guests-arrive.24e2fd75": "Klargjøring før eiers eller gjesters ankomst",
+        "ui.from-key-handovers-and-preparation-to-inspection.576ca7b8": "Alt fra nøkkeloverlevering og klargjøring til tilsyn, koordinering av renhold og løpende oppfølging. Omfanget avtales for hver enkelt bolig.",
+        "ui.more-time-for-em-what-matters-em.f7fca373": "Mer tid til <em>det du vil.</em>",
+        "ui.rental-guest-support.acfbba4f": "UTLEIE OG GJESTESERVICE",
+        "ui.from-keys-to-welcome.8aec92b5": "FRA NØKKEL TIL VELKOMST",
+        "ui.illustration-holiday-home-ready.3110da49": "Illustrasjon: klargjort feriebolig",
+        "ui.when-you-are-away-from-the-costa-blanca-we-can-a.a9d9cf8d": "Når du ikke er på Costa Blanca, kan vi bidra med praktisk håndtering av boligen og oppfølging av gjester.",
+        "ui.your-property-br-em-well-looked-after-em.00066d65": "Boligen din.<br><em>Godt ivaretatt.</em>",
+        "ui.checks-cleaning-and-updates-for-the-owner.f2ab4103": "Kontroll, renhold og status til boligeier.",
+        "ui.after-departure.931a89dc": "Etter avreise",
+        "ui.practical-point-of-contact-and-coordination.b5804f89": "Praktisk kontaktpunkt og koordinering ved behov.",
+        "ui.during-the-stay.e1491b8b": "Under oppholdet",
+        "ui.key-handover-and-helpful-information.e9120949": "Nøkkelhåndtering og nødvendig informasjon.",
+        "ui.when-guests-arrive.c3df48cd": "Når gjestene kommer",
+        "ui.checks-cleaning-and-practical-preparation.403899f2": "Kontroll, renhold og praktisk klargjøring.",
+        "ui.before-arrival.26f0982f": "Før ankomst",
+        "ui.these-are-sample-answers-to-demonstrate-an-faq.6399b3af": "Dette er eksempelsvar for å vise hvordan en FAQ kan fungere.",
+        "ui.common-em-questions-em.e3b672f4": "Vanlige <em>spørsmål.</em>",
+        "ui.at-launch-customers-can-describe-their-needs-thr.bdbe79a2": "Ved lansering kan kundene beskrive behovet sitt via kontaktskjemaet. CBPM vurderer omfang og avtaler videre prosess. Ingen priser er funnet på for denne mockupen.",
+        "ui.how-are-quotations-handled.6daf20eb": "Hvordan fungerer pristilbud?",
+        "ui.the-website-is-designed-to-present-checks-prepar.b568bb21": "Nettsiden er lagt opp for å presentere tilsyn, klargjøring, nøkler og løpende oppfølging for eiere som ikke er på stedet.",
+        "ui.can-you-help-while-the-owner-is-abroad.ccec5b13": "Hjelper dere med boligen når eieren er i Norge?",
+        "ui.yes-smaller-jobs-are-a-core-part-of-the-proposed.857e9c1b": "Ja, dette er en sentral del av den planlagte tjenesteprofilen. Enkle oppdrag skal være like naturlige som større prosjekter.",
+        "ui.do-you-also-take-small-repair-jobs.696c1c80": "Kan CBPM hjelpe med små reparasjoner?",
+        "ui.electrical-installations-refrigeration-systems-a.8547ec4a": "Elektriske installasjoner, kuldeanlegg og annet regulert arbeid skal utføres av kvalifiserte og registrerte fagfolk i tråd med gjeldende spanske krav. Nøyaktig tjenesteomfang avklares før publisering.",
+        "ui.a-note-on-regulated-work.fff2e289": "Viktig om fagarbeid:",
+        "ui.services-will-be-added-here.ecb62c75": "Tjenesteområder legges til her.",
+        "ui.service-area.d61e2f5d": "TJENESTEOMRÅDE",
+        "ui.services-are-tailored-to-the-property-and-each-a.d13616f3": "Tjenestene tilpasses boligen og oppdraget.",
+        "ui.practical-support-em-professionally-handled-em.c386ce8a": "Praktisk hjelp. <em>Faglig utført.</em>",
+        "ui.how-we-can-help.320b5156": "DETTE KAN VI HJELPE MED",
+        "ui.we-help-with-what-your-home-needs-from-small-rep.79530cc1": "Vi hjelper med det boligen trenger – fra en liten reparasjon til større prosjekter og løpende oppfølging.",
+        "ui.services-for-em-every-home-em.711fe557": "Tjenester til <em>hele hjemmet.</em>",
+        "ui.filter.62dd5254": "Filtrer",
+        "ui.all-projects.c8fac12c": "Alle prosjekter",
+        "ui.all-services.c2f4e6dd": "Alle tjenester",
+        "ui.explore-the-site.87fc7cc6": "UTFORSK NETTSIDEN",
+        "ui.maintenance-renovation-technical-services-and-re.934249d3": "Vedlikehold, oppussing, tekniske tjenester og utleiehåndtering – for alle typer boliger på Costa Blanca.",
+        "ui.we-take-care-br-of-your-home-br-em-all-year-roun.6869c44c": "Vi tar vare på<br>boligen din.<br><em>Hele året.</em>",
+        "ui.property-care-on-the-costa-blanca.66f065a8": "EIENDOMSSERVICE PÅ COSTA BLANCA",
+        "ui.illustrative-mediterranean-home-on-the-costa-bla.1d1591c4": "Illustrasjon av middelhavseiendom på Costa Blanca",
+        "ui.get-in-touch.f085b557": "Ta kontakt",
+        "ui.tell-us-what-you-need-em-well-find-a-way-em.a775450d": "Fortell oss hva du trenger. <em>Vi finner en løsning.</em>",
+        "ui.need-a-hand.624ccb2a": "HAR DU EN OPPGAVE?",
+        "ui.illustration-real-photos-to-come.a708b7fd": "ILLUSTRASJON · EKTE BILDER KOMMER",
+        "ui.illustrative-service-team-not-cbpm-employees.6e3a6c82": "Illustrasjonsbilde av serviceteam, ikke CBPM-ansatte",
+        "ui.meet-the-team.64da0529": "Møt teamet",
+        "ui.people-who-get-things-done.5297d966": "Folk som får ting gjort",
+        "ui.personal-approachable-service.b83ff47c": "Nær og personlig kontakt",
+        "ui.it-matters-who-you-invite-into-your-home-here-we.117c195f": "Hvem du slipper inn i boligen din betyr noe. Her skal vi vise frem menneskene bak CBPM med ekte portretter, erfaring og fagområder.",
+        "ui.real-people-br-em-real-commitment-em.4042b2dc": "Ekte mennesker.<br><em>Ekte engasjement.</em>",
+        "ui.the-people-behind.81178757": "MENNESKENE BAK",
+        "ui.sample-content-only-genuine-customer-statements.e5813664": "Demoinnhold. Her publiseres kun faktiske kundeuttalelser etter samtykke. Google-vurderinger kan kobles til når bedriften har en aktiv profil.",
+        "ui.explore-all-testimonials.09d622ca": "Se siden «Hva våre kunder sier»",
+        "ui.next-review.dde6bdf8": "Neste omtale",
+        "ui.previous-review.0de85661": "Forrige omtale",
+        "ui.customer-stories.ab432117": "KUNDEOPPLEVELSER",
+        "ui.not-published.113e40ba": "Ikke publisert",
+        "ui.read-more.44e0a901": "Les mer",
+        "ui.future-rating-placeholder.07967be0": "Plassholder for eventuell vurdering",
+        "ui.projects-shown-are-illustrative-concepts-not-com.68fafa8a": "Alle viste prosjekter er konseptillustrasjoner, ikke dokumenterte CBPM-oppdrag.",
+        "ui.view-all-projects.acbb4315": "Se alle prosjekter",
+        "ui.see-what-we-can-do-from-small-jobs-to-major-impr.58e20813": "Se hva vi kan bidra med – fra mindre oppdrag til større forbedringer.",
+        "ui.results-that-em-speak-for-themselves-em.4f1546e8": "Resultater som <em>snakker for seg.</em>",
+        "ui.featured-projects.21a4e54e": "UTVALGTE PROSJEKTER",
+        "ui.before-after-design-demo.f259d3d7": "FØR / ETTER · DESIGNDEMO",
+        "ui.before-and-after.9d6cb5c8": "Før og etter",
+        "ui.drag-to-compare-before-and-after.8765d54e": "Skyv for å sammenligne før og etter",
+        "ui.after.564c4db0": "ETTER",
+        "ui.before.6f85d5af": "FØR",
+        "ui.before-photograph.e0c6f782": "Før-bilde",
+        "ui.after-photograph.047067f3": "Etter-bilde",
+        "ui.for-property-owners-on-the-costa-blanca.5e985550": "For deg som eier bolig på Costa Blanca.",
+        "ui.easier-everyday.3d8f13c4": "Enklere hverdag.",
+        "ui.illustrative-mediterranean-home.fbde982e": "Illustrasjonsfoto av middelhavseiendom",
+        "ui.meet-cbpm.35d65e05": "Bli kjent med CBPM",
+        "ui.support-even-when-away.f963322a": "Praktisk hjelp også når du er borte",
+        "ui.one-contact-many-solutions.f1c3117d": "Én kontakt, mange løsninger",
+        "ui.no-two-jobs-are-quite-alike-cbpm-aims-to-be-a-fl.e41a8ac3": "En oppgave er sjelden helt lik den neste. Derfor skal CBPM være en fleksibel partner – fra en enkel reparasjon til koordinering av flere fag og oppfølging over tid.",
+        "ui.we-care-for-the-em-whole-em-property.0083ba6e": "Vi tar vare på <em>hele</em> eiendommen.",
+        "ui.more-than-maintenance.2ba10a06": "MER ENN BARE VEDLIKEHOLD",
+        "ui.for-all-types-of-homes.e153537c": "For alle typer boliger",
+        "ui.help-throughout-the-year.0245a20b": "Hjelp gjennom hele året",
+        "ui.hands-on-skills-and-follow-up.f5940d1f": "Praktisk kompetanse og oppfølging",
+        "ui.local-presence-on-the-costa-blanca.ec5b83ec": "Lokal tilstedeværelse på Costa Blanca",
+        "ui.from-holiday-apartments-to-villas-maintenance-im.ac961056": "Fra ferieleiligheter til villaer – vi hjelper med vedlikehold, oppussing og drift.",
+        "ui.everything-you-need-em-one-partner-em.1474d57e": "Alt du trenger. <em>Én partner.</em>",
+        "ui.our-services.d46bbc2e": "VÅRE TJENESTER",
+        "ui.get-in-touch.553062a2": "Ta kontakt",
+        "ui.explore-our-services.be333f00": "Se våre tjenester",
+        "ui.not-published-illustrative-images-and-sample-con.a710ef21": "Ikke publisert · illustrasjonsbilder og eksempelinnhold",
+        "ui.contact-details-coming-soon.badc0d57": "Kontaktinformasjon kommer",
+        "ui.area.278ab4a0": "Område",
+        "ui.privacy-legal.9887c9eb": "Personvern og juridisk",
+        "ui.explore.8be38580": "Utforsk",
+        "ui.from-small-repairs-to-larger-projects-and-ongoin.f565f273": "Alt fra små reparasjoner til større prosjekter og løpende oppfølging. En praktisk partner for eiendommen din på Costa Blanca.",
+        "ui.request-a-quote.738438cf": "Be om tilbud →",
+        "ui.mobile-menu.873ee622": "Mobilmeny",
+        "ui.open-menu.9bf513f3": "Åpne meny",
+        "ui.request-a-quote.6c7b5376": "Be om tilbud",
+        "ui.primary-navigation.3a58e085": "Hovednavigasjon",
+        "ui.selected.0370be20": "Valgt",
+        "ui.choose-language.7356663c": "Velg språk",
+        "ui.close.faa44301": "Lukk",
+        "ui.required-spanish-company-information-and-privacy.771de8c2": "Lovpålagt spansk informasjon, personvern og vilkår må være ferdig før publisering.",
+        "ui.legal-information.91c0afc3": "Juridisk informasjon",
+        "ui.the-review-link-will-be-activated-when-the-compa.fa544fb5": "Anmeldelseslenken blir aktiv når CBPM har en offisiell profil.",
+        "ui.google-reviews.daddb62b": "Google-anmeldelser",
+        "ui.placeholder.3ea27b12": "Plassholder",
+        "ui.could-not-send-the-enquiry-please-try-later-or-c.72990a24": "Kunne ikke sende forespørselen. Prøv igjen senere eller kontakt oss direkte.",
+        "ui.thank-you-your-enquiry-has-been-sent-we-will-be.62d81dd3": "Takk! Forespørselen er sendt. Vi tar kontakt så snart vi kan.",
+        "ui.sending-enquiry.af96df73": "Sender forespørselen …",
+        "ui.this-remains-a-test-form-no-data-was-sent-or-sto.7acbaf34": "Dette er fortsatt et testskjema. Ingen data er sendt eller lagret.",
+        "ui.close-menu.0096b483": "Lukk meny",
+        "ui.contact-live-privacy-note": "Vi bruker opplysningene bare til å besvare henvendelsen.",
+        "ui.contact-live-consent": "Jeg har lest personvernerklæringen og samtykker til at CBPM behandler opplysningene for å besvare forespørselen.",
+        "ui.contact-live-submit": "Send forespørsel",
+        "ui.contact-live-intro": "Kontakt oss om vedlikehold, reparasjoner, oppussing eller utleiehåndtering.",
+        "ui.contact-live-privacy-link": "Les personvernerklæringen"
+      },
+      "en": {
+        "ui.test-the-form.b328b3c1": "Test the form",
+        "ui.i-understand-this-is-an-inactive-demonstration-f.fe688919": "I understand this is an inactive demonstration form.",
+        "ui.tell-us-a-little-about-the-property-and-what-you.de354102": "Tell us a little about the property and what you need …",
+        "ui.describe-your-needs.096c52d9": "Describe your needs",
+        "ui.other.a6b84ecf": "Other",
+        "ui.choose-a-service.f2d5e7b8": "Choose a service",
+        "ui.what-is-it-about.1d42a238": "What is it about?",
+        "ui.phone.9310f793": "Phone",
+        "ui.email.1295ad74": "Email",
+        "ui.your-name.57373ced": "Your name",
+        "ui.name.083f39b5": "Name",
+        "ui.demo-only-nothing-is-sent-or-stored.e55e8a62": "Demo only: Nothing is sent or stored.",
+        "ui.send-an-enquiry.c23ae1a4": "Send an enquiry",
+        "ui.added-at-launch.a4437da7": "Added at launch",
+        "ui.phone-whatsapp.d14d3883": "PHONE / WHATSAPP",
+        "ui.area.a7e05f07": "AREA",
+        "ui.the-contact-form-is-designed-but-does-not-send-d.429095ab": "The contact form is designed but does not send data in this mockup. Real phone, email and WhatsApp details will be added before launch.",
+        "ui.lets-find-em-a-solution-em.5910ef6b": "Let’s find <em>a solution.</em>",
+        "ui.wed-love-to-hear-from-you.d73c764f": "WE’D LOVE TO HEAR FROM YOU",
+        "ui.a-small-repair-a-larger-project-or-ongoing-prope.6311a5da": "A small repair, a larger project or ongoing property care? Tell us what you need.",
+        "ui.tell-us-about-em-your-property-em.aa377edc": "Tell us about <em>your property.</em>",
+        "ui.leave-a-review.fbd3d0f3": "Leave a review",
+        "ui.this-is-where-the-companys-google-review-link-wi.38545655": "This is where the company’s Google review link will be added once available.",
+        "ui.worked-with-em-cbpm-em.0c7b1460": "Worked with <em>CBPM?</em>",
+        "ui.share-your-experience.d6036810": "SHARE YOUR EXPERIENCE",
+        "ui.the-future-content-editor-will-be-able-to-publis.ddea0f45": "The future content editor will be able to publish and translate real reviews and connect them to projects.",
+        "ui.approved-testimonials-will-appear-here.388d00fb": "Approved testimonials will appear here.",
+        "ui.the-statements-below-are-placeholder-text-not-re.6b6d62ac": "The statements below are placeholder text, not real reviews. Stars and Google attribution will only appear with authentic reviews.",
+        "ui.trust-grows-em-over-time-em.15cb05a4": "Trust grows <em>over time.</em>",
+        "ui.customer-stories.0b33208f": "CUSTOMER STORIES",
+        "ui.genuine-customer-experiences-will-be-a-highlight.616b0a81": "Genuine customer experiences will be a highlight here, with names and photos where permission is granted.",
+        "ui.what-our-em-customers-say-em.99283de3": "What our <em>customers say.</em>",
+        "ui.real-portraits-names-areas-of-expertise-and-intr.ccd44617": "Real portraits, names, areas of expertise and introductions will be added once the team is in place.",
+        "ui.the-faces-behind-em-the-work-em.054b7ff6": "The faces behind <em>the work.</em>",
+        "ui.meet-the-team.c1bea822": "MEET THE TEAM",
+        "ui.good-work-em-no-fuss-em.d9bd552e": "Good work. <em>No fuss.</em>",
+        "ui.what-matters-to-us.143f80d0": "WHAT MATTERS TO US",
+        "ui.mediterranean-setting-illustration.6ead6459": "Mediterranean setting, illustration",
+        "ui.cbpm-costa-blanca-property-management-aims-to-be.73f5745d": "CBPM – Costa Blanca Property Management aims to be a natural partner for owners needing hands-on help, maintenance and care. The real company story and team details will be added when ready.",
+        "ui.from-small-fixes-to-em-big-improvements-em.2f764c90": "From small fixes to <em>big improvements.</em>",
+        "ui.who-we-are.9b24ba9b": "WHO WE ARE",
+        "ui.a-service-company-built-around-good-relationship.78f8ac6c": "A service company built around good relationships, quality work and accessibility.",
+        "ui.the-people-behind-em-cbpm-em.1b0dd92e": "The people behind <em>CBPM.</em>",
+        "ui.the-size-of-a-property-does-not-determine-the-im.42559685": "The size of a property does not determine the importance of the work.",
+        "ui.care-for-your-home.fbb63988": "Care for your home",
+        "ui.each-task-requires-the-right-skills-clear-agreem.6ca5ce87": "Each task requires the right skills, clear agreements and reliable follow-up.",
+        "ui.professional-care.75fcf913": "Professional care",
+        "ui.clear-approachable-communication-even-while-the.ac5729ed": "Clear, approachable communication, even while the owner is abroad.",
+        "ui.close-by.fb83de2b": "Close by",
+        "ui.sample.eb9e76ea": "SAMPLE",
+        "ui.portrait-coming.00b0d8ad": "PORTRAIT COMING",
+        "ui.name-role-and-introduction-to-be-added-once-avai.18d8a229": "Name, role and introduction to be added once available.",
+        "ui.real-portrait-coming-soon.b52c08bc": "REAL PORTRAIT COMING SOON",
+        "ui.rentals-property-care.fb40d71a": "Rentals & property care",
+        "ui.maintenance-technical-services.d42f9c98": "Maintenance & technical services",
+        "ui.management-customer-contact.429f0d10": "Management & customer contact",
+        "ui.ask-about-a-similar-job.3a6304af": "Ask about a similar job",
+        "ui.this-is-an-illustration-of-a-project-page-not-a.981f7561": "This is an illustration of a project page, not a documented customer assignment.",
+        "ui.our-work.192b5b08": "OUR WORK",
+        "ui.sample-project.cd31fb09": "SAMPLE PROJECT",
+        "ui.back-to-projects.07baa4d1": "Back to projects",
+        "ui.these-pictures-illustrate-a-design-concept-not-c.29049c04": "These pictures illustrate a design concept, not completed CBPM assignments. Genuine projects and before/after photos will be added later.",
+        "ui.a-selection-of-our-projects.ff16b70f": "A selection of our projects.",
+        "ui.these-project-cards-are-examples-of-future-conte.6199510f": "These project cards are examples of future content.",
+        "ui.from-idea-to-em-finished-em.659933d4": "From idea to <em>finished.</em>",
+        "ui.project-gallery.95e33d8d": "PROJECT GALLERY",
+        "ui.good-photos-make-work-easy-to-understand-project.cd3d4cfa": "Good photos make work easy to understand. Projects will have their own stories, images and details.",
+        "ui.the-work-em-behind-the-result-em.0d469718": "The work <em>behind the result.</em>",
+        "ui.view-project.dd570e5c": "View project",
+        "ui.design-demo.1c5aa6d5": "DESIGN DEMO",
+        "ui.holiday-lets-and-rental-management-must-comply-w.86de87c1": "Holiday lets and rental management must comply with applicable local licences, registrations and legal requirements. Confirm details before offering the service.",
+        "ui.for-rentals-in-spain.6375bded": "For rentals in Spain:",
+        "ui.an-example-of-how-the-property-can-be-supported.e961fef7": "An example of how the property can be supported throughout a stay.",
+        "ui.before-during-em-after-em.99a5003c": "Before. During. <em>After.</em>",
+        "ui.a-simple-process.89dcf7ea": "A SIMPLE PROCESS",
+        "ui.property-checks-and-documented-updates.ba4b1db0": "Property checks and documented updates",
+        "ui.keys-check-in-and-practical-support.5aab18fc": "Keys, check-in and practical support",
+        "ui.preparation-before-owners-or-guests-arrive.24e2fd75": "Preparation before owners or guests arrive",
+        "ui.from-key-handovers-and-preparation-to-inspection.576ca7b8": "From key handovers and preparation to inspections, cleaning coordination and ongoing support. The scope is agreed for each property.",
+        "ui.more-time-for-em-what-matters-em.f7fca373": "More time for <em>what matters.</em>",
+        "ui.rental-guest-support.acfbba4f": "RENTAL & GUEST SUPPORT",
+        "ui.from-keys-to-welcome.8aec92b5": "FROM KEYS TO WELCOME",
+        "ui.illustration-holiday-home-ready.3110da49": "Illustration: holiday home ready",
+        "ui.when-you-are-away-from-the-costa-blanca-we-can-a.a9d9cf8d": "When you are away from the Costa Blanca, we can assist with practical property and guest support.",
+        "ui.your-property-br-em-well-looked-after-em.00066d65": "Your property.<br><em>Well looked after.</em>",
+        "ui.checks-cleaning-and-updates-for-the-owner.f2ab4103": "Checks, cleaning and updates for the owner.",
+        "ui.after-departure.931a89dc": "After departure",
+        "ui.practical-point-of-contact-and-coordination.b5804f89": "Practical point of contact and coordination.",
+        "ui.during-the-stay.e1491b8b": "During the stay",
+        "ui.key-handover-and-helpful-information.e9120949": "Key handover and helpful information.",
+        "ui.when-guests-arrive.c3df48cd": "When guests arrive",
+        "ui.checks-cleaning-and-practical-preparation.403899f2": "Checks, cleaning and practical preparation.",
+        "ui.before-arrival.26f0982f": "Before arrival",
+        "ui.these-are-sample-answers-to-demonstrate-an-faq.6399b3af": "These are sample answers to demonstrate an FAQ.",
+        "ui.common-em-questions-em.e3b672f4": "Common <em>questions.</em>",
+        "ui.at-launch-customers-can-describe-their-needs-thr.bdbe79a2": "At launch, customers can describe their needs through the contact form. CBPM will assess the scope. No prices have been invented for this mockup.",
+        "ui.how-are-quotations-handled.6daf20eb": "How are quotations handled?",
+        "ui.the-website-is-designed-to-present-checks-prepar.b568bb21": "The website is designed to present checks, preparation, keyholding and ongoing support while the owner is away.",
+        "ui.can-you-help-while-the-owner-is-abroad.ccec5b13": "Can you help while the owner is abroad?",
+        "ui.yes-smaller-jobs-are-a-core-part-of-the-proposed.857e9c1b": "Yes, smaller jobs are a core part of the proposed service offering, alongside larger projects.",
+        "ui.do-you-also-take-small-repair-jobs.696c1c80": "Do you also take small repair jobs?",
+        "ui.electrical-installations-refrigeration-systems-a.8547ec4a": "Electrical installations, refrigeration systems and other regulated work require properly qualified and registered professionals under Spanish rules. Exact service scope must be verified before launch.",
+        "ui.a-note-on-regulated-work.fff2e289": "A note on regulated work:",
+        "ui.services-will-be-added-here.ecb62c75": "Services will be added here.",
+        "ui.service-area.d61e2f5d": "SERVICE AREA",
+        "ui.services-are-tailored-to-the-property-and-each-a.d13616f3": "Services are tailored to the property and each assignment.",
+        "ui.practical-support-em-professionally-handled-em.c386ce8a": "Practical support. <em>Professionally handled.</em>",
+        "ui.how-we-can-help.320b5156": "HOW WE CAN HELP",
+        "ui.we-help-with-what-your-home-needs-from-small-rep.79530cc1": "We help with what your home needs, from small repairs to larger projects and ongoing care.",
+        "ui.services-for-em-every-home-em.711fe557": "Services for <em>every home.</em>",
+        "ui.filter.62dd5254": "Filter",
+        "ui.all-projects.c8fac12c": "All projects",
+        "ui.all-services.c2f4e6dd": "All services",
+        "ui.explore-the-site.87fc7cc6": "EXPLORE THE SITE",
+        "ui.maintenance-renovation-technical-services-and-re.934249d3": "Maintenance, renovation, technical services and rental support – for every kind of home on the Costa Blanca.",
+        "ui.we-take-care-br-of-your-home-br-em-all-year-roun.6869c44c": "We take care<br>of your home.<br><em>All year round.</em>",
+        "ui.property-care-on-the-costa-blanca.66f065a8": "PROPERTY CARE ON THE COSTA BLANCA",
+        "ui.illustrative-mediterranean-home-on-the-costa-bla.1d1591c4": "Illustrative Mediterranean home on the Costa Blanca",
+        "ui.get-in-touch.f085b557": "Get in touch",
+        "ui.tell-us-what-you-need-em-well-find-a-way-em.a775450d": "Tell us what you need. <em>We’ll find a way.</em>",
+        "ui.need-a-hand.624ccb2a": "NEED A HAND?",
+        "ui.illustration-real-photos-to-come.a708b7fd": "ILLUSTRATION · REAL PHOTOS TO COME",
+        "ui.illustrative-service-team-not-cbpm-employees.6e3a6c82": "Illustrative service team, not CBPM employees",
+        "ui.meet-the-team.64da0529": "Meet the team",
+        "ui.people-who-get-things-done.5297d966": "People who get things done",
+        "ui.personal-approachable-service.b83ff47c": "Personal, approachable service",
+        "ui.it-matters-who-you-invite-into-your-home-here-we.117c195f": "It matters who you invite into your home. Here we will introduce the real CBPM team with authentic photos and expertise.",
+        "ui.real-people-br-em-real-commitment-em.4042b2dc": "Real people.<br><em>Real commitment.</em>",
+        "ui.the-people-behind.81178757": "THE PEOPLE BEHIND",
+        "ui.sample-content-only-genuine-customer-statements.e5813664": "Sample content. Only genuine customer statements with consent will be published. Google reviews may be connected once a business profile is live.",
+        "ui.explore-all-testimonials.09d622ca": "Explore all testimonials",
+        "ui.next-review.dde6bdf8": "Next review",
+        "ui.previous-review.0de85661": "Previous review",
+        "ui.customer-stories.ab432117": "CUSTOMER STORIES",
+        "ui.not-published.113e40ba": "Not published",
+        "ui.read-more.44e0a901": "Read more",
+        "ui.future-rating-placeholder.07967be0": "Future rating placeholder",
+        "ui.projects-shown-are-illustrative-concepts-not-com.68fafa8a": "Projects shown are illustrative concepts, not completed CBPM work.",
+        "ui.view-all-projects.acbb4315": "View all projects",
+        "ui.see-what-we-can-do-from-small-jobs-to-major-impr.58e20813": "See what we can do, from small jobs to major improvements.",
+        "ui.results-that-em-speak-for-themselves-em.4f1546e8": "Results that <em>speak for themselves.</em>",
+        "ui.featured-projects.21a4e54e": "FEATURED PROJECTS",
+        "ui.before-after-design-demo.f259d3d7": "BEFORE / AFTER · DESIGN DEMO",
+        "ui.before-and-after.9d6cb5c8": "Before and after",
+        "ui.drag-to-compare-before-and-after.8765d54e": "Drag to compare before and after",
+        "ui.after.564c4db0": "AFTER",
+        "ui.before.6f85d5af": "BEFORE",
+        "ui.before-photograph.e0c6f782": "Before photograph",
+        "ui.after-photograph.047067f3": "After photograph",
+        "ui.for-property-owners-on-the-costa-blanca.5e985550": "For property owners on the Costa Blanca.",
+        "ui.easier-everyday.3d8f13c4": "Easier everyday.",
+        "ui.illustrative-mediterranean-home.fbde982e": "Illustrative Mediterranean home",
+        "ui.meet-cbpm.35d65e05": "Meet CBPM",
+        "ui.support-even-when-away.f963322a": "Support even when away",
+        "ui.one-contact-many-solutions.f1c3117d": "One contact, many solutions",
+        "ui.no-two-jobs-are-quite-alike-cbpm-aims-to-be-a-fl.e41a8ac3": "No two jobs are quite alike. CBPM aims to be a flexible partner, from a simple repair to coordinating several trades and ongoing property care.",
+        "ui.we-care-for-the-em-whole-em-property.0083ba6e": "We care for the <em>whole</em> property.",
+        "ui.more-than-maintenance.2ba10a06": "MORE THAN MAINTENANCE",
+        "ui.for-all-types-of-homes.e153537c": "For all types of homes",
+        "ui.help-throughout-the-year.0245a20b": "Help throughout the year",
+        "ui.hands-on-skills-and-follow-up.f5940d1f": "Hands-on skills and follow-up",
+        "ui.local-presence-on-the-costa-blanca.ec5b83ec": "Local presence on the Costa Blanca",
+        "ui.from-holiday-apartments-to-villas-maintenance-im.ac961056": "From holiday apartments to villas – maintenance, improvements and property care.",
+        "ui.everything-you-need-em-one-partner-em.1474d57e": "Everything you need. <em>One partner.</em>",
+        "ui.our-services.d46bbc2e": "OUR SERVICES",
+        "ui.get-in-touch.553062a2": "Get in touch",
+        "ui.explore-our-services.be333f00": "Explore our services",
+        "ui.not-published-illustrative-images-and-sample-con.a710ef21": "Not published · illustrative images and sample content",
+        "ui.contact-details-coming-soon.badc0d57": "Contact details coming soon",
+        "ui.area.278ab4a0": "Area",
+        "ui.privacy-legal.9887c9eb": "Privacy & legal",
+        "ui.explore.8be38580": "Explore",
+        "ui.from-small-repairs-to-larger-projects-and-ongoin.f565f273": "From small repairs to larger projects and ongoing care. A practical partner for your property on the Costa Blanca.",
+        "ui.request-a-quote.738438cf": "Request a quote →",
+        "ui.mobile-menu.873ee622": "Mobile menu",
+        "ui.open-menu.9bf513f3": "Open menu",
+        "ui.request-a-quote.6c7b5376": "Request a quote",
+        "ui.primary-navigation.3a58e085": "Primary navigation",
+        "ui.selected.0370be20": "Selected",
+        "ui.choose-language.7356663c": "Choose language",
+        "ui.close.faa44301": "Close",
+        "ui.required-spanish-company-information-and-privacy.771de8c2": "Required Spanish company information and privacy notices must be added before launch.",
+        "ui.legal-information.91c0afc3": "Legal information",
+        "ui.the-review-link-will-be-activated-when-the-compa.fa544fb5": "The review link will be activated when the company has an official profile.",
+        "ui.google-reviews.daddb62b": "Google reviews",
+        "ui.placeholder.3ea27b12": "Placeholder",
+        "ui.could-not-send-the-enquiry-please-try-later-or-c.72990a24": "Could not send the enquiry. Please try later or contact us directly.",
+        "ui.thank-you-your-enquiry-has-been-sent-we-will-be.62d81dd3": "Thank you! Your enquiry has been sent. We will be in touch.",
+        "ui.sending-enquiry.af96df73": "Sending enquiry …",
+        "ui.this-remains-a-test-form-no-data-was-sent-or-sto.7acbaf34": "This remains a test form. No data was sent or stored.",
+        "ui.close-menu.0096b483": "Close menu",
+        "ui.contact-live-privacy-note": "Your details will be used only to respond to your enquiry.",
+        "ui.contact-live-consent": "I have read the privacy notice and agree that CBPM processes my details to answer my enquiry.",
+        "ui.contact-live-submit": "Send enquiry",
+        "ui.contact-live-intro": "Contact us about maintenance, repairs, renovations or rental management.",
+        "ui.contact-live-privacy-link": "View privacy notice"
+      },
+      "es": {
+        "ui.test-the-form.b328b3c1": "Probar formulario",
+        "ui.i-understand-this-is-an-inactive-demonstration-f.fe688919": "Entiendo que este formulario es una demostración no operativa.",
+        "ui.tell-us-a-little-about-the-property-and-what-you.de354102": "Cuéntenos sobre su propiedad y lo que necesita …",
+        "ui.describe-your-needs.096c52d9": "Describa el trabajo",
+        "ui.other.a6b84ecf": "Otro",
+        "ui.choose-a-service.f2d5e7b8": "Seleccione un servicio",
+        "ui.what-is-it-about.1d42a238": "¿En qué podemos ayudar?",
+        "ui.phone.9310f793": "Teléfono",
+        "ui.email.1295ad74": "Correo",
+        "ui.your-name.57373ced": "Su nombre",
+        "ui.name.083f39b5": "Nombre",
+        "ui.demo-only-nothing-is-sent-or-stored.e55e8a62": "Solo demostración: No se envía ni guarda ningún dato.",
+        "ui.send-an-enquiry.c23ae1a4": "Enviar una consulta",
+        "ui.added-at-launch.a4437da7": "Se añadirá al lanzamiento",
+        "ui.phone-whatsapp.d14d3883": "TELÉFONO / WHATSAPP",
+        "ui.area.a7e05f07": "ZONA",
+        "ui.the-contact-form-is-designed-but-does-not-send-d.429095ab": "El formulario está diseñado, pero no envía datos en esta maqueta. Los datos reales de teléfono, correo y WhatsApp se añadirán antes del lanzamiento.",
+        "ui.lets-find-em-a-solution-em.5910ef6b": "Encontremos <em>una solución.</em>",
+        "ui.wed-love-to-hear-from-you.d73c764f": "QUEREMOS ESCUCHARLE",
+        "ui.a-small-repair-a-larger-project-or-ongoing-prope.6311a5da": "¿Una pequeña reparación, un proyecto mayor o mantenimiento continuo? Cuéntenos qué necesita.",
+        "ui.tell-us-about-em-your-property-em.aa377edc": "Cuéntenos sobre <em>su vivienda.</em>",
+        "ui.leave-a-review.fbd3d0f3": "Dejar una reseña",
+        "ui.this-is-where-the-companys-google-review-link-wi.38545655": "Aquí añadiremos el enlace a las reseñas de Google cuando exista el perfil de empresa.",
+        "ui.worked-with-em-cbpm-em.0c7b1460": "¿Ha contratado a <em>CBPM?</em>",
+        "ui.share-your-experience.d6036810": "COMPARTA SU EXPERIENCIA",
+        "ui.the-future-content-editor-will-be-able-to-publis.ddea0f45": "El editor de contenidos podrá publicar y traducir opiniones reales y relacionarlas con proyectos.",
+        "ui.approved-testimonials-will-appear-here.388d00fb": "Aquí aparecerán las reseñas aprobadas.",
+        "ui.the-statements-below-are-placeholder-text-not-re.6b6d62ac": "Los textos siguientes son ejemplos, no reseñas reales. Las estrellas y la fuente de Google solo se mostrarán con opiniones auténticas.",
+        "ui.trust-grows-em-over-time-em.15cb05a4": "La confianza crece <em>con el tiempo.</em>",
+        "ui.customer-stories.0b33208f": "HISTORIAS DE CLIENTES",
+        "ui.genuine-customer-experiences-will-be-a-highlight.616b0a81": "Las experiencias de clientes reales serán protagonistas, con nombres y fotos cuando exista consentimiento.",
+        "ui.what-our-em-customers-say-em.99283de3": "Lo que dicen <em>nuestros clientes.</em>",
+        "ui.real-portraits-names-areas-of-expertise-and-intr.ccd44617": "Aquí aparecerán fotos reales, nombres, especialidades y presentaciones del equipo.",
+        "ui.the-faces-behind-em-the-work-em.054b7ff6": "Las personas detrás <em>del trabajo.</em>",
+        "ui.meet-the-team.c1bea822": "CONOZCA AL EQUIPO",
+        "ui.good-work-em-no-fuss-em.d9bd552e": "Trabajo bien hecho. <em>Sin complicaciones.</em>",
+        "ui.what-matters-to-us.143f80d0": "NUESTROS VALORES",
+        "ui.mediterranean-setting-illustration.6ead6459": "Entorno mediterráneo, ilustración",
+        "ui.cbpm-costa-blanca-property-management-aims-to-be.73f5745d": "CBPM – Costa Blanca Property Management quiere ser el aliado natural de quienes necesitan reparaciones, mantenimiento y apoyo. La historia real y el equipo se incorporarán cuando la empresa esté lista.",
+        "ui.from-small-fixes-to-em-big-improvements-em.2f764c90": "De pequeños cambios a <em>grandes mejoras.</em>",
+        "ui.who-we-are.9b24ba9b": "QUIÉNES SOMOS",
+        "ui.a-service-company-built-around-good-relationship.78f8ac6c": "Una empresa de servicios basada en buenas relaciones, calidad y atención cercana.",
+        "ui.the-people-behind-em-cbpm-em.1b0dd92e": "Las personas detrás de <em>CBPM.</em>",
+        "ui.the-size-of-a-property-does-not-determine-the-im.42559685": "El tamaño de una propiedad no determina la importancia del trabajo.",
+        "ui.care-for-your-home.fbb63988": "Cuidado de su vivienda",
+        "ui.each-task-requires-the-right-skills-clear-agreem.6ca5ce87": "Cada tarea exige las competencias correctas, acuerdos claros y seguimiento fiable.",
+        "ui.professional-care.75fcf913": "Responsabilidad profesional",
+        "ui.clear-approachable-communication-even-while-the.ac5729ed": "Comunicación clara y cercana incluso cuando el propietario está fuera.",
+        "ui.close-by.fb83de2b": "Cercanos",
+        "ui.sample.eb9e76ea": "EJEMPLO",
+        "ui.portrait-coming.00b0d8ad": "RETRATO PRÓXIMAMENTE",
+        "ui.name-role-and-introduction-to-be-added-once-avai.18d8a229": "Se añadirán nombre, cargo y presentación cuando estén disponibles.",
+        "ui.real-portrait-coming-soon.b52c08bc": "FOTO REAL PRÓXIMAMENTE",
+        "ui.rentals-property-care.fb40d71a": "Alquiler e inspecciones",
+        "ui.maintenance-technical-services.d42f9c98": "Mantenimiento y servicios técnicos",
+        "ui.management-customer-contact.429f0d10": "Dirección y atención al cliente",
+        "ui.ask-about-a-similar-job.3a6304af": "Preguntar por un trabajo similar",
+        "ui.this-is-an-illustration-of-a-project-page-not-a.981f7561": "Esta es una ilustración de un proyecto, no un trabajo realizado.",
+        "ui.our-work.192b5b08": "NUESTRO TRABAJO",
+        "ui.sample-project.cd31fb09": "PROYECTO DE MUESTRA",
+        "ui.back-to-projects.07baa4d1": "Volver a proyectos",
+        "ui.these-pictures-illustrate-a-design-concept-not-c.29049c04": "Estas imágenes son un concepto visual, no trabajos realizados por CBPM. Más adelante se añadirán proyectos y fotos reales.",
+        "ui.a-selection-of-our-projects.ff16b70f": "Una selección de nuestros proyectos.",
+        "ui.these-project-cards-are-examples-of-future-conte.6199510f": "Estas tarjetas muestran ejemplos de contenido futuro.",
+        "ui.from-idea-to-em-finished-em.659933d4": "De la idea al <em>resultado.</em>",
+        "ui.project-gallery.95e33d8d": "GALERÍA DE PROYECTOS",
+        "ui.good-photos-make-work-easy-to-understand-project.cd3d4cfa": "Las buenas fotos muestran el trabajo. Los proyectos tendrán sus propias historias, imágenes y detalles.",
+        "ui.the-work-em-behind-the-result-em.0d469718": "El trabajo <em>detrás del resultado.</em>",
+        "ui.view-project.dd570e5c": "Ver proyecto",
+        "ui.design-demo.1c5aa6d5": "DEMO",
+        "ui.holiday-lets-and-rental-management-must-comply-w.86de87c1": "El alquiler turístico y su gestión deben cumplir los permisos, registros y requisitos legales aplicables. Se confirmarán antes de ofrecer el servicio.",
+        "ui.for-rentals-in-spain.6375bded": "Sobre el alquiler en España:",
+        "ui.an-example-of-how-the-property-can-be-supported.e961fef7": "Un ejemplo de cómo cuidar la vivienda durante una estancia.",
+        "ui.before-during-em-after-em.99a5003c": "Antes. Durante. <em>Después.</em>",
+        "ui.a-simple-process.89dcf7ea": "UN PROCESO SENCILLO",
+        "ui.property-checks-and-documented-updates.ba4b1db0": "Inspecciones y seguimiento documentado",
+        "ui.keys-check-in-and-practical-support.5aab18fc": "Llaves, check-in y asistencia",
+        "ui.preparation-before-owners-or-guests-arrive.24e2fd75": "Preparación antes de la llegada de propietarios o huéspedes",
+        "ui.from-key-handovers-and-preparation-to-inspection.576ca7b8": "Desde entrega de llaves y preparación hasta inspecciones, coordinación de limpieza y seguimiento. El alcance se acuerda para cada vivienda.",
+        "ui.more-time-for-em-what-matters-em.f7fca373": "Más tiempo para <em>lo importante.</em>",
+        "ui.rental-guest-support.acfbba4f": "ALQUILER Y ATENCIÓN A HUÉSPEDES",
+        "ui.from-keys-to-welcome.8aec92b5": "DE LAS LLAVES A LA BIENVENIDA",
+        "ui.illustration-holiday-home-ready.3110da49": "Ilustración: vivienda vacacional preparada",
+        "ui.when-you-are-away-from-the-costa-blanca-we-can-a.a9d9cf8d": "Cuando esté lejos de la Costa Blanca, podemos ayudarle con el cuidado de su vivienda y la atención a huéspedes.",
+        "ui.your-property-br-em-well-looked-after-em.00066d65": "Su vivienda.<br><em>En buenas manos.</em>",
+        "ui.checks-cleaning-and-updates-for-the-owner.f2ab4103": "Inspección, limpieza y aviso al propietario.",
+        "ui.after-departure.931a89dc": "Tras la salida",
+        "ui.practical-point-of-contact-and-coordination.b5804f89": "Punto de contacto y coordinación.",
+        "ui.during-the-stay.e1491b8b": "Durante la estancia",
+        "ui.key-handover-and-helpful-information.e9120949": "Entrega de llaves e información útil.",
+        "ui.when-guests-arrive.c3df48cd": "Llegada de huéspedes",
+        "ui.checks-cleaning-and-practical-preparation.403899f2": "Revisión, limpieza y preparación.",
+        "ui.before-arrival.26f0982f": "Antes de llegar",
+        "ui.these-are-sample-answers-to-demonstrate-an-faq.6399b3af": "Son respuestas de ejemplo para mostrar cómo funcionará la sección.",
+        "ui.common-em-questions-em.e3b672f4": "Preguntas <em>frecuentes.</em>",
+        "ui.at-launch-customers-can-describe-their-needs-thr.bdbe79a2": "Al lanzar la web, los clientes podrán describir sus necesidades mediante el formulario. CBPM evaluará el alcance. No se han inventado precios para esta maqueta.",
+        "ui.how-are-quotations-handled.6daf20eb": "¿Cómo se elaboran los presupuestos?",
+        "ui.the-website-is-designed-to-present-checks-prepar.b568bb21": "La web presenta inspecciones, preparación, custodia de llaves y seguimiento para propietarios ausentes.",
+        "ui.can-you-help-while-the-owner-is-abroad.ccec5b13": "¿Pueden ayudar si el propietario está fuera?",
+        "ui.yes-smaller-jobs-are-a-core-part-of-the-proposed.857e9c1b": "Sí. Los trabajos pequeños son una parte esencial de la oferta prevista, junto a los proyectos más grandes.",
+        "ui.do-you-also-take-small-repair-jobs.696c1c80": "¿Atienden pequeñas reparaciones?",
+        "ui.electrical-installations-refrigeration-systems-a.8547ec4a": "Las instalaciones eléctricas, sistemas de refrigeración y otros trabajos regulados deben realizarse por profesionales cualificados y registrados conforme a la normativa española. El alcance definitivo se confirmará antes del lanzamiento.",
+        "ui.a-note-on-regulated-work.fff2e289": "Sobre trabajos regulados:",
+        "ui.services-will-be-added-here.ecb62c75": "Los servicios aparecerán aquí.",
+        "ui.service-area.d61e2f5d": "ÁREA DE SERVICIO",
+        "ui.services-are-tailored-to-the-property-and-each-a.d13616f3": "Los servicios se adaptan a cada propiedad y trabajo.",
+        "ui.practical-support-em-professionally-handled-em.c386ce8a": "Ayuda práctica. <em>Trabajo profesional.</em>",
+        "ui.how-we-can-help.320b5156": "CÓMO PODEMOS AYUDAR",
+        "ui.we-help-with-what-your-home-needs-from-small-rep.79530cc1": "Ayudamos con todo lo que su hogar necesita, desde pequeñas reparaciones hasta grandes proyectos y mantenimiento continuo.",
+        "ui.services-for-em-every-home-em.711fe557": "Servicios para <em>todo su hogar.</em>",
+        "ui.filter.62dd5254": "Filtrar",
+        "ui.all-projects.c8fac12c": "Todos los proyectos",
+        "ui.all-services.c2f4e6dd": "Todos los servicios",
+        "ui.explore-the-site.87fc7cc6": "DESCUBRA LA WEB",
+        "ui.maintenance-renovation-technical-services-and-re.934249d3": "Mantenimiento, reformas, servicios técnicos y gestión de alquileres para todo tipo de viviendas en la Costa Blanca.",
+        "ui.we-take-care-br-of-your-home-br-em-all-year-roun.6869c44c": "Cuidamos de<br>su vivienda.<br><em>Todo el año.</em>",
+        "ui.property-care-on-the-costa-blanca.66f065a8": "SERVICIOS INMOBILIARIOS EN COSTA BLANCA",
+        "ui.illustrative-mediterranean-home-on-the-costa-bla.1d1591c4": "Vivienda mediterránea ilustrativa en la Costa Blanca",
+        "ui.get-in-touch.f085b557": "Contactar",
+        "ui.tell-us-what-you-need-em-well-find-a-way-em.a775450d": "Díganos qué necesita. <em>Encontraremos la solución.</em>",
+        "ui.need-a-hand.624ccb2a": "¿NECESITA AYUDA?",
+        "ui.illustration-real-photos-to-come.a708b7fd": "ILUSTRACIÓN · FOTOS REALES PRÓXIMAMENTE",
+        "ui.illustrative-service-team-not-cbpm-employees.6e3a6c82": "Equipo ilustrativo, no empleados reales de CBPM",
+        "ui.meet-the-team.64da0529": "Conozca al equipo",
+        "ui.people-who-get-things-done.5297d966": "Personas que hacen las cosas bien",
+        "ui.personal-approachable-service.b83ff47c": "Atención cercana y personal",
+        "ui.it-matters-who-you-invite-into-your-home-here-we.117c195f": "Importa quién entra en su hogar. Aquí presentaremos al equipo real de CBPM con fotos auténticas y experiencia.",
+        "ui.real-people-br-em-real-commitment-em.4042b2dc": "Personas reales.<br><em>Compromiso real.</em>",
+        "ui.the-people-behind.81178757": "LAS PERSONAS DETRÁS",
+        "ui.sample-content-only-genuine-customer-statements.e5813664": "Contenido de muestra. Solo se publicarán opiniones reales con consentimiento. Las reseñas de Google podrán vincularse cuando haya un perfil activo.",
+        "ui.explore-all-testimonials.09d622ca": "Ver todas las opiniones",
+        "ui.next-review.dde6bdf8": "Opinión siguiente",
+        "ui.previous-review.0de85661": "Opinión anterior",
+        "ui.customer-stories.ab432117": "EXPERIENCIAS DE CLIENTES",
+        "ui.not-published.113e40ba": "No publicada",
+        "ui.read-more.44e0a901": "Leer más",
+        "ui.future-rating-placeholder.07967be0": "Espacio para futura valoración",
+        "ui.projects-shown-are-illustrative-concepts-not-com.68fafa8a": "Los proyectos son conceptos ilustrativos, no trabajos realizados por CBPM.",
+        "ui.view-all-projects.acbb4315": "Ver proyectos",
+        "ui.see-what-we-can-do-from-small-jobs-to-major-impr.58e20813": "Vea cómo podemos ayudar, desde pequeñas tareas hasta grandes mejoras.",
+        "ui.results-that-em-speak-for-themselves-em.4f1546e8": "Resultados que <em>hablan por sí solos.</em>",
+        "ui.featured-projects.21a4e54e": "PROYECTOS DESTACADOS",
+        "ui.before-after-design-demo.f259d3d7": "ANTES / DESPUÉS · DEMO",
+        "ui.before-and-after.9d6cb5c8": "Antes y después",
+        "ui.drag-to-compare-before-and-after.8765d54e": "Deslice para comparar antes y después",
+        "ui.after.564c4db0": "DESPUÉS",
+        "ui.before.6f85d5af": "ANTES",
+        "ui.before-photograph.e0c6f782": "Foto antes",
+        "ui.after-photograph.047067f3": "Foto después",
+        "ui.for-property-owners-on-the-costa-blanca.5e985550": "Para propietarios en la Costa Blanca.",
+        "ui.easier-everyday.3d8f13c4": "Un día a día más fácil.",
+        "ui.illustrative-mediterranean-home.fbde982e": "Imagen ilustrativa de casa mediterránea",
+        "ui.meet-cbpm.35d65e05": "Conozca CBPM",
+        "ui.support-even-when-away.f963322a": "Ayuda incluso cuando no esté",
+        "ui.one-contact-many-solutions.f1c3117d": "Un contacto, muchas soluciones",
+        "ui.no-two-jobs-are-quite-alike-cbpm-aims-to-be-a-fl.e41a8ac3": "Cada trabajo es diferente. CBPM quiere ser un socio flexible, desde una pequeña reparación hasta la coordinación de varios profesionales y el mantenimiento continuo.",
+        "ui.we-care-for-the-em-whole-em-property.0083ba6e": "Cuidamos de <em>toda</em> su vivienda.",
+        "ui.more-than-maintenance.2ba10a06": "MÁS QUE MANTENIMIENTO",
+        "ui.for-all-types-of-homes.e153537c": "Para todo tipo de viviendas",
+        "ui.help-throughout-the-year.0245a20b": "Ayuda durante todo el año",
+        "ui.hands-on-skills-and-follow-up.f5940d1f": "Experiencia práctica y seguimiento",
+        "ui.local-presence-on-the-costa-blanca.ec5b83ec": "Presencia local en la Costa Blanca",
+        "ui.from-holiday-apartments-to-villas-maintenance-im.ac961056": "De apartamentos a villas: mantenimiento, reformas y gestión de su propiedad.",
+        "ui.everything-you-need-em-one-partner-em.1474d57e": "Todo lo que necesita. <em>Un solo aliado.</em>",
+        "ui.our-services.d46bbc2e": "NUESTROS SERVICIOS",
+        "ui.get-in-touch.553062a2": "Contáctanos",
+        "ui.explore-our-services.be333f00": "Ver servicios",
+        "ui.not-published-illustrative-images-and-sample-con.a710ef21": "No publicada · imágenes ilustrativas y contenido de muestra",
+        "ui.contact-details-coming-soon.badc0d57": "Datos de contacto próximamente",
+        "ui.area.278ab4a0": "Zona",
+        "ui.privacy-legal.9887c9eb": "Privacidad y legal",
+        "ui.explore.8be38580": "Explorar",
+        "ui.from-small-repairs-to-larger-projects-and-ongoin.f565f273": "Desde pequeñas reparaciones hasta grandes proyectos y mantenimiento continuo. Un socio de confianza para su vivienda en la Costa Blanca.",
+        "ui.request-a-quote.738438cf": "Pedir presupuesto →",
+        "ui.mobile-menu.873ee622": "Menú móvil",
+        "ui.open-menu.9bf513f3": "Abrir menú",
+        "ui.request-a-quote.6c7b5376": "Pedir presupuesto",
+        "ui.primary-navigation.3a58e085": "Navegación principal",
+        "ui.selected.0370be20": "Seleccionado",
+        "ui.choose-language.7356663c": "Elegir idioma",
+        "ui.close.faa44301": "Cerrar",
+        "ui.required-spanish-company-information-and-privacy.771de8c2": "Se deben añadir los datos legales y la política de privacidad antes de publicar.",
+        "ui.legal-information.91c0afc3": "Información legal",
+        "ui.the-review-link-will-be-activated-when-the-compa.fa544fb5": "El enlace se activará cuando exista un perfil oficial.",
+        "ui.google-reviews.daddb62b": "Reseñas de Google",
+        "ui.placeholder.3ea27b12": "Ejemplo",
+        "ui.could-not-send-the-enquiry-please-try-later-or-c.72990a24": "No se pudo enviar. Inténtelo más tarde o contacte con nosotros.",
+        "ui.thank-you-your-enquiry-has-been-sent-we-will-be.62d81dd3": "¡Gracias! Su consulta se ha enviado. Nos pondremos en contacto.",
+        "ui.sending-enquiry.af96df73": "Enviando consulta …",
+        "ui.this-remains-a-test-form-no-data-was-sent-or-sto.7acbaf34": "Este formulario sigue siendo de prueba. No se han enviado ni guardado datos.",
+        "ui.close-menu.0096b483": "Cerrar menú",
+        "ui.contact-live-privacy-note": "Utilizamos sus datos únicamente para responder a su consulta.",
+        "ui.contact-live-consent": "He leído la política de privacidad y acepto que CBPM trate mis datos para responder a mi consulta.",
+        "ui.contact-live-submit": "Enviar consulta",
+        "ui.contact-live-intro": "Consúltenos sobre mantenimiento, reparaciones, reformas o gestión de alquileres.",
+        "ui.contact-live-privacy-link": "Ver política de privacidad"
+      }
+    }
+  },
+  "propertyModules": {
+    "properties": {
+      "enabled": false,
+      "showInNavigation": true,
+      "labels": {}
+    },
+    "developments": {
+      "enabled": false,
+      "showInNavigation": true,
+      "labels": {}
+    }
+  },
+  "smartAssistant": {
+    "enabled": false,
+    "showLauncher": true,
+    "displayName": "Smart Assistant",
+    "endpoint": "",
+    "welcome": {
+      "no": "Hei! Jeg kan hjelpe deg med spørsmål om boliger og tjenester.",
+      "en": "Hello! I can help with questions about properties and services.",
+      "es": "¡Hola! Puedo ayudarte con preguntas sobre propiedades y servicios.",
+      "de": "Hallo! Ich helfe Ihnen gerne bei Fragen zu Immobilien und Dienstleistungen.",
+      "da": "Hej! Jeg kan hjælpe med spørgsmål om boliger og tjenester.",
+      "fi": "Hei! Autan mielelläni asuntoihin ja palveluihin liittyvissä kysymyksissä.",
+      "fr": "Bonjour ! Je peux vous aider pour les biens immobiliers et les services.",
+      "nl": "Hallo! Ik help u graag met vragen over woningen en diensten.",
+      "pl": "Cześć! Pomogę w pytaniach dotyczących nieruchomości i usług.",
+      "sv": "Hej! Jag hjälper gärna till med frågor om bostäder och tjänster.",
+      "ru": "Здравствуйте! Я помогу вам с вопросами о недвижимости и услугах."
+    }
+  }
+}

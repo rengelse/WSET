@@ -1,0 +1,3 @@
+'use strict';
+// Read existing browser preferences once, then use the selected workspace's Settings file.
+(()=>{const bridge=window.cbpm;if(!bridge?.workspacePreference)return;const call=(...args)=>{const result=bridge.workspacePreference(...args);if(result?.error)throw Error(result.error);return result?.value;};try{const old={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k?.startsWith('wset-')||k==='cbpm-designer-ui-language')old[k]=localStorage.getItem(k);}call('import',old);}catch(e){console.warn('WSET-innstillinger:',e.message);}window.wsetPrefs={getItem:k=>call('get',k),setItem:(k,v)=>call('set',k,String(v))};})();

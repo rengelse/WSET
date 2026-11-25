@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile,mkdir,mkdtemp,rm,writeFile} from 'node:fs/promises';
+import {join} from 'node:path';
+import {tmpdir} from 'node:os';
+import {describeRecentProjects} from '../designer/core/recent-projects.mjs';
+import {previewDocument,startDesignerPreview} from '../designer/core/preview-server.mjs';
+import {renderDynamicSite} from '../designer/engines/cbpm-astro-v1/lib/dynamic-site.mjs';
+import {migrateProjectForDesigner} from '../designer/core/project-migrations.mjs';
+import {projectHealth} from '../designer/core/project-health.mjs';
+const site=migrateProjectForDesigner(JSON.parse(await readFile(new URL('../designer/compat/website-seed.json',import.meta.url),'utf8')));
+test('Library displays saved business name, and unavailable projects retain a fallback label',async()=>{const dir=await mkdtemp(join(tmpdir(),'wset-names-'));try{await mkdir(join(dir,'project'));await writeFile(join(dir,'project','website.json'),JSON.stringify({brand:{displayName:'Test website'}}));const rows=await describeRecentProjects([dir,join(dir,'missing')]);assert.equal(rows[0].name,'Test website');assert.ok(rows[0].updatedLabel);assert.equal(rows[1].name,'missing');}finally{await rm(dir,{recursive:true,force:true})}});
+test('Preview has local editing script and stable section IDs, public renderer does not',()=>{const html=previewDocument(site,'no','home');assert.match(html,/data-cbpm-section="home-hero"/);assert.match(html,/__wset-preview-bridge\.js/);assert.match(html,/cbpm-editor-map/);assert.doesNotMatch(html,/<script src="\/designer-preview-select.js"/);const published=renderDynamicSite({site,locale:'no',page:'home'}).html;assert.doesNotMatch(published,/data-cbpm-section|__wset-preview-bridge|wset-preview-selected/);});
+test('Preview bridge and selection CSS served by WSET, not imported website',async()=>{const server=await startDesignerPreview({getSite:()=>site,getRoot:()=>'/missing-project-root'});try{for(const [url,file] of [['/__wset-preview-bridge.js','bridge.js'],['/__wset-preview-selection.css','selection.css']]){const r=await fetch(server.url+url);assert.equal(r.status,200);assert.equal(await r.text(),await readFile(new URL('../designer/preview/'+file,import.meta.url),'utf8'));}}finally{await server.close()}});
+test('No export history does not create a false changes-after-export issue',()=>{const args={site,report:{ok:true,errors:[],warnings:[]}};assert.equal(projectHealth(args).issues.some(i=>i.title==='Endringer etter eksport'),false);assert.equal(projectHealth({...args,exportInfo:{root:'/a',currentRoot:'/a',matchesCurrent:false}}).issues.some(i=>i.title==='Endringer etter eksport'),true);});

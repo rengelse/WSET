@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="no">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https: http://127.0.0.1:*; frame-src http://127.0.0.1:*; connect-src http://127.0.0.1:*; form-action 'none'; base-uri 'none'">
+ <title>WSET – WebSite Editing Tool</title>
+ <link rel="stylesheet" href="./style.css">
+ <script src="./workspace-preferences.js" defer></script>
+ <script src="./app-i18n.js" defer></script>
+ <script src="./property-drafts.js" defer></script>
+ <script src="./property-manager.js" defer></script>
+ <script src="./language-workspace.js" defer></script>
+ <link rel="stylesheet" href="./server-workspace.css">
+ <script src="./server-workspace.js" defer></script>
+ <link rel="stylesheet" href="./template-library.css">
+ <script src="./template-library.js" defer></script>
+ <link rel="stylesheet" href="./template-gallery.css">
+ <script src="./template-compatibility.js" defer></script>
+ <link rel="stylesheet" href="./template-compatibility.css">
+ <script src="./template-gallery.js" defer></script>
+ <script src="./workspace.js" defer></script>
+ <link rel="stylesheet" href="./workspace.css">
+ <link rel="stylesheet" href="./project-dashboard.css">
+ <script src="./project-dashboard.js" defer></script>
+ <link rel="stylesheet" href="./application-updater.css">
+ <script src="./application-updater.js" defer></script>
+ <link rel="stylesheet" href="./project-creation.css">
+ <script src="./project-creation.js" defer></script>
+ <script src="./app.js" defer></script>
+ <script src="./translation-settings.js" defer></script>
+</head>
+<body>
+ <div class="shell">
+  <header class="topbar">
+   <div class="identity"><div class="logomark" aria-hidden="true">W</div><div><strong>WSET</strong><small>WEBSITE EDITING TOOL</small></div></div>
+   <div class="project-picker">
+    <span class="project-caption">Prosjekt</span>
+    <button id="project-switch" class="project-switch" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="project-popover" title="Velg eller åpne prosjekt"><span class="project-folder" aria-hidden="true">▱</span><span id="project-name">Ingen prosjekt</span><span class="project-chevron" aria-hidden="true">⌄</span></button>
+    <div id="project-popover" class="project-popover" hidden>
+     <div class="project-menu-heading">NYLIGE PROSJEKTER</div>
+     <div id="recent-project-list" role="group" aria-label="Nylig åpnede prosjekter"></div>
+     <div class="project-menu-actions"><button id="template-library-open" type="button">Malbibliotek …</button><button id="import-project-btn" type="button">Importer prosjekt / mal ZIP …</button><button id="open-btn" type="button">Åpne prosjektmappe …</button><button id="copy-btn" type="button">Lagre som ny prosjektmappe …</button><button id="export-project-btn" type="button">Eksporter prosjekt-ZIP …</button><button id="save-template-btn" type="button">Lagre som mal-ZIP …</button></div>
+    </div>
+   </div>
+   <span id="dirty-tag" class="dirty" hidden>Ulagret</span>
+   <div class="top-spacer"></div>
+   <span id="app-version" class="app-version"></span><button id="app-update-alert" class="btn btn-outline app-update-alert" type="button" hidden>↑ Oppdatering</button>
+   
+   <div class="top-actions"><div class="history-actions" role="group" aria-label="Endringshistorikk"><button id="undo-btn" type="button" class="btn btn-quiet history-btn" aria-label="Angre (Ctrl+Z)" title="Angre (Ctrl+Z)" disabled>↶</button><button id="redo-btn" type="button" class="btn btn-quiet history-btn" aria-label="Gjør om (Ctrl+Y)" title="Gjør om (Ctrl+Y)" disabled>↷</button></div><button id="save-btn" class="btn btn-outline" type="button">Lagre</button><button id="generate-btn" class="btn btn-generate" type="button">↗ Generer nettside</button></div><details class="app-options"><summary class="chrome-icon app-options-trigger" title="Programinnstillinger" aria-label="Programinnstillinger">⚙</summary><div class="app-options-menu"><label class="app-options-heading" for="designer-ui-language">Grensesnittspråk</label><div class="designer-ui-language-picker"><img id="designer-ui-flag" src="./flags/no.svg" alt="" aria-hidden="true"><select id="designer-ui-language" aria-label="Grensesnittspråk"><option value="no">Norsk</option><option value="en">English</option><option value="es">Español</option></select></div><button type="button" id="app-update-open" class="btn btn-outline">Programoppdateringer</button><button type="button" id="workspace-settings-open" class="btn btn-outline">Arbeidsområde</button><button type="button" id="translation-settings-open" class="btn btn-outline">Oversettelse</button></div></details>
+  </header>
+  <main id="welcome-workspace" class="welcome-workspace" hidden>
+   <div class="welcome-content"><span class="eyebrow">WSET · PROSJEKTBIBLIOTEK</span><h1 id="welcome-title">Oversikt</h1>
+    <p>Ingen nettsted er åpnet. Importer en redigerbar WSET-prosjektfil, åpne en eksisterende prosjektmappe eller bruk en lagret mal som utgangspunkt.</p>
+    <div class="welcome-actions"><button id="welcome-import" class="btn btn-primary" type="button">Importer prosjekt eller mal (ZIP)</button><button id="welcome-open" class="btn btn-outline" type="button">Åpne prosjektmappe</button></div>
+    <div id="welcome-last"></div><button id="welcome-library" class="btn btn-outline" type="button">Mine nettsteder</button>
+    <div id="welcome-recent" class="welcome-recent"></div>
+   </div>
+  </main>
+  <div class="workspace">
+   <nav id="primary-navigation" class="primary-navigation" aria-label="Hovedmeny">
+    <div class="nav-links">
+     <button class="nav-item" data-area="library" title="Mine nettsteder"><svg viewBox="0 0 24 24"><path d="M3 5h7l2 3h9v12H3z"/></svg><span>Mine nettsteder</span></button>
+     <button class="nav-item" data-area="templates" title="Malbibliotek"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M12 9v12"/></svg><span>Malbibliotek</span></button>
+     <button class="nav-item" data-area="overview" title="Oversikt" aria-current="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>Oversikt</span></button>
+     <button class="nav-item" data-area="website" title="Nettsider" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M8 3v6"/></svg><span>Nettsider</span></button>
+     <button class="nav-item" data-area="properties" title="Eiendommer" aria-current="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 11 10-8 10 8M4 10v11h16V10M9 21v-8h6v8"/></svg><span>Eiendommer</span></button>
+     <button class="nav-item" data-area="media" title="Medier" aria-current="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m4 18 5-5 4 3 3-4 5 6"/></svg><span>Medier</span></button>
+     <button class="nav-item" data-area="languages" title="Språk" aria-current="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18M12 3c-5 5-5 13 0 18"/></svg><span>Språk</span></button>
+     <button class="nav-item" data-area="server" title="Server / FTP"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 7h1m-1 11h1"/></svg><span>Server / FTP</span></button><button class="nav-item" data-area="settings" title="Innstillinger" aria-current="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg><span>Innstillinger</span></button>
+    <button class="nav-item" data-area="publishing" title="Publisering"><svg viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6"/></svg><span>Publisering</span></button></div>
+    <button id="nav-collapse-btn" class="nav-collapse" type="button" aria-label="Kompakt meny" title="Kompakt meny" aria-expanded="true"><span class="nav-collapse-icon" aria-hidden="true">«</span><span>Skjul tekst</span></button>
+   </nav>
+   <aside class="sidebar">
+    <div class="side-intro"><span class="eyebrow">ARBEIDSOMRÅDE</span><h1 id="workspace-heading">Nettstedet</h1><p id="workspace-hint">Velg en side, seksjon eller oppføring. Dra for å endre rekkefølge, eller klikk direkte i forhåndsvisningen.</p></div>
+    <select id="content-type" aria-label="Innholdstype"><option value="pages">Sider og seksjoner</option><option value="categories">Kategorier</option><option value="services">Tjenester</option><option value="projects">Prosjekter</option><option value="team">Ansatte</option><option value="reviews">Kundeomtaler</option></select><div id="editor-tabs" class="editor-tabs" role="navigation" aria-label="Valg innen arbeidsområdet">
+     <button data-tab="pages" data-area-for="website" class="editor-tab active">Sider</button>
+     <button data-tab="categories" data-area-for="website" class="editor-tab">Kategorier</button>
+     <button data-tab="services" data-area-for="website" class="editor-tab">Tjenester</button>
+     <button data-tab="projects" data-area-for="website" class="editor-tab">Prosjekter</button>
+     <button data-tab="team" data-area-for="website" class="editor-tab">Ansatte</button>
+     <button data-tab="reviews" data-area-for="website" class="editor-tab">Omtaler</button>
+     <button data-tab="propertyManager" data-area-for="properties" class="editor-tab">Eiendomsregister</button>
+     <button data-tab="media" data-area-for="media" class="editor-tab" hidden>Medier</button>
+     <button data-tab="languages" data-area-for="languages" class="editor-tab" hidden>Språk</button>
+     <button data-tab="brand" data-area-for="settings" class="editor-tab" hidden>Bedrift</button>
+    </div>
+    <section id="pages-pane"><p class="sidebar-help wset-edit-guide"><strong>Slik redigerer du:</strong> Velg side → velg seksjon → endre innhold til høyre. Du kan også klikke direkte i forhåndsvisningen.</p><div class="subheading"><span>NETTSIDER</span><button id="new-page-btn" type="button" class="square-btn" title="Legg til side" aria-label="Legg til side">+</button></div><input id="tree-search" type="search" placeholder="Søk i sider og seksjoner" aria-label="Søk i sider og seksjoner"><div id="pages-list" class="pages-list"></div><div class="side-hint"><span class="hint-symbol">ⓘ</span> Skjulte sider blir ikke inkludert ved publisering.</div></section>
+    <section id="collections-pane" hidden><div class="subheading"><span id="collection-heading">INNHOLD</span><button id="new-record-btn" class="square-btn" type="button" title="Nytt innhold">+</button></div><div id="collection-list"></div></section>
+    <section id="media-pane" hidden><div class="subheading"><span>BILDEBIBLIOTEK</span><button id="media-upload-btn" class="square-btn" title="Importer bilde">+</button></div><div class="media-browser-tools"><input id="media-search" type="search" placeholder="Søk etter bilde …" aria-label="Søk i mediebiblioteket"><select id="media-filter" aria-label="Filtrer bilder"><option value="all">Alle bilder</option><option value="uploaded">Opplastede bilder</option><option value="original">Mal 01-bilder</option><option value="logo">Logoer</option></select><p id="media-results" role="status" aria-live="polite"></p></div><div id="media-list"></div></section>
+    <section id="languages-pane" hidden><div class="subheading"><span>SPRÅK</span><button id="new-language-btn" class="square-btn" type="button" title="Legg til språk" aria-label="Legg til språk">+</button></div><div id="languages-list"></div><p class="sidebar-help">Nye språk er utkast til alle nødvendige oversettelser er på plass.</p></section>
+    <section id="property-manager-pane" hidden></section>
+    <section id="brand-pane" hidden><div class="subheading"><span>BEDRIFTSPROFIL</span></div><p class="sidebar-help">Felles opplysninger brukes over hele nettstedet.</p><div id="brand-form"></div></section>
+    <div id="resize-tree" class="resize-grip" role="separator" aria-label="Bredde på sidetre" aria-orientation="vertical" tabindex="0"></div><div class="sidebar-footer"><div id="template-badge" class="footer-badge">MAL</div><div><strong id="template-title">Nettsidemal</strong><small id="template-description">Prosjektets nettsidemal</small></div></div>
+   </aside>
+   <section class="canvas">
+    <div class="canvas-head"><div class="crumb"><span>REDIGERER SIDE</span><strong id="page-heading">Forsiden</strong></div><div class="canvas-site-language"><label class="canvas-locale-label" for="preview-lang">NETTSIDESPRÅK</label><select id="preview-lang" aria-label="Språk for forhåndsvisning"></select></div><div class="canvas-head-spacer"></div><div class="device-switch" role="group" aria-label="Skjermstørrelse"><button data-device="desktop" class="selected" aria-pressed="true" title="PC-visning" aria-label="PC-visning">▣</button><button data-device="tablet" aria-pressed="false" title="Nettbrettvisning" aria-label="Nettbrettvisning">▯</button><button data-device="mobile" aria-pressed="false" title="Mobilvisning" aria-label="Mobilvisning">▥</button></div><div class="workspace-panel-controls" role="group" aria-label="Arbeidspaneler"><button id="toggle-tree-btn" type="button" aria-label="Vis eller skjul sidetre (Ctrl+Shift+1)" aria-pressed="true" title="Vis/skjul sidetre (Ctrl+Shift+1)">◧</button><button id="toggle-inspector-btn" type="button" aria-label="Vis eller skjul redigering (Ctrl+Shift+2)" aria-pressed="true" title="Vis/skjul redigering (Ctrl+Shift+2)">◨</button></div><button id="preview-mode" class="preview-mode-btn" type="button" aria-pressed="false" title="Forhåndsvis uten redigeringsmarkeringer">Forhåndsvis</button><button id="focus-mode-btn" type="button" class="focus-mode-btn" aria-label="Fokusmodus" aria-pressed="false" title="Maksimal arbeidsflate">⛶</button></div>
+    <div id="overview-workspace" class="overview-workspace" hidden>
+     <div class="overview-heading"><span class="eyebrow">PROSJEKTKONTROLL</span><h1>Oversikt</h1><p>Faktiske prosjektdata, mangler og oppgaver som må følges opp.</p></div>
+     <div class="overview-project"><div><span class="eyebrow">ÅPENT PROSJEKT</span><h2 id="overview-project-name">Nettsted</h2><details class="project-path"><summary>Prosjektdetaljer</summary><p id="overview-project-root"></p></details><p id="overview-save-status" role="status"></p></div><div class="overview-project-actions"><button type="button" class="btn btn-primary" data-resume>Fortsett redigering</button><button type="button" class="btn btn-outline" data-overview-validate>Kontroller prosjekt</button></div></div>
+     <div id="health-loading" class="overview-notice" role="status">Laster prosjektstatus …</div>
+     <div id="health-dashboard" hidden>
+      <div id="health-metrics" class="health-metrics" aria-label="Prosjektets nøkkeltall"></div>
+      <section class="health-panel"><h2>Moduler</h2><div id="dashboard-modules"></div></section><section class="health-panel" aria-labelledby="health-issues-title"><div class="health-panel-head"><h2 id="health-issues-title">Krever oppfølging</h2><span id="health-issue-total"></span></div><div id="health-issues"></div></section><section class="health-panel"><h2>Mine oppgaver</h2><div id="manual-tasks"></div><form id="task-form" class="task-form"><input id="task-text" maxlength="250" required placeholder="Legg til huskelisteoppgave" aria-label="Ny oppgave"><button class="btn btn-outline" type="submit">Legg til</button></form></section>
+      <div class="health-columns" hidden><section class="health-panel"><h2>Status per område</h2><div id="health-areas"></div></section><section class="health-panel"><h2>Språk og publisering</h2><div id="health-languages"></div><div class="health-publish" id="health-publish"></div></section></div>
+      <p class="health-disclaimer">Eiendomsdata og faktisk publisering på webhotellet bekreftes ikke av lokal prosjektvalidering. Eksport betyr at ZIP-filen er generert, ikke at nettstedet er publisert.</p>
+     </div>
+    </div>
+    <section id="utility-workspace" class="overview-workspace" hidden></section><div id="pm-workspace" class="pm-workspace" hidden></div><section id="media-workspace" class="media-workspace" hidden></section><section id="language-workspace" class="language-workspace" hidden></section><section id="settings-workspace" class="settings-workspace" hidden></section>
+    <div class="preview-outer" id="preview-outer"><div class="preview-sheet" id="preview-sheet"><iframe id="site-preview" title="Nettside – levende forhåndsvisning" sandbox="allow-same-origin allow-scripts allow-forms"></iframe></div></div>
+    <div class="canvas-foot"><span id="preview-status" role="status" aria-live="polite">Levende forhåndsvisning</span><button id="refresh-btn" class="text-action" type="button">↻ Oppdater</button></div>
+   </section>
+   <aside class="inspector"><div id="resize-inspector" class="resize-grip" role="separator" aria-label="Bredde på redigeringspanel" aria-orientation="vertical" tabindex="0"></div><div class="inspector-head"><span class="eyebrow">REDIGERING</span><h2 id="inspector-title">Sider og seksjoner</h2><p id="inspector-subtitle">Velg en side eller seksjon for å redigere.</p></div><nav id="inspector-panel-tabs" class="inspector-panel-tabs" aria-label="Rediger valgt innhold" role="tablist"><button type="button" data-inspector-pane="content" class="active" role="tab" aria-selected="true">Innhold</button><button type="button" data-inspector-pane="images" role="tab" aria-selected="false">Bilder</button><button type="button" data-inspector-pane="appearance" hidden role="tab" aria-selected="false">Utseende</button><button type="button" data-inspector-pane="publish" hidden role="tab" aria-selected="false">Publisering</button><button type="button" data-inspector-pane="advanced" role="tab" aria-selected="false">Innstillinger</button></nav><div id="inspector-body" class="inspector-body"></div><div class="inspector-bottom"><button id="validate-btn" class="btn btn-outline" type="button">Kontroller prosjekt</button><p id="validation-short">Ingen kontroll utført.</p></div></aside>
+  </div>
+  <div class="statusbar"><span><span class="green-pin"></span> Nettsidedesign og XML lokalt</span><span>WSET v1.0.2 · separat modulbibliotek</span></div>
+ </div>
+ <dialog id="app-update-dialog" aria-labelledby="app-update-title"><div class="app-update-body"><header class="dialog-title"><h2 id="app-update-title">Programoppdateringer</h2><button id="app-update-close" type="button" class="icon-close" aria-label="Lukk">×</button></header><p id="app-update-installed"></p><p id="app-update-status" role="status" aria-live="polite"></p><progress id="app-update-progress" max="100" hidden></progress><pre id="app-update-notes" hidden></pre><p class="dialog-help">Kun WSET-programmet installeres på nytt. Nettsider, maler og moduler oppdateres ikke.</p><div class="dialog-actions"><button id="app-update-check" type="button" class="btn btn-outline">Se etter oppdateringer</button><button id="app-update-install" type="button" class="btn btn-primary" hidden>Oppdater nå</button></div></div></dialog>
+ <dialog id="page-dialog"><form method="dialog" id="add-page-form"><div class="dialog-title"><div><span class="eyebrow">NY NETTSIDE</span><h2>Legg til side</h2></div><button value="cancel" formnovalidate class="icon-close" aria-label="Lukk">×</button></div><label>Navn på siden<input name="title" maxlength="90" required placeholder="Eksempel: Områder vi dekker"></label><label>Adresse (slug)<input name="slug" required pattern="[a-z][a-z0-9-]*" placeholder="omrader"></label><p class="dialog-help" id="blank-template-status">En ny side arver designet fra den aktive nettsidemalen og starter uten innholdsseksjoner.</p><div class="dialog-actions"><button class="btn btn-quiet" value="cancel" formnovalidate>Avbryt</button><button class="btn btn-primary" id="new-page-submit" value="submit">Opprett side</button></div></form></dialog>
+ <dialog id="website-export-dialog" class="export-dialog" aria-labelledby="export-title">
+  <div class="export-dialog-body">
+   <span class="eyebrow">PUBLISERING</span>
+   <h2 id="export-title">Generer nettside</h2>
+   <label for="export-web-root">Offentlig mappe på webhotellet</label><select id="export-web-root"><option value="www">www/ (standard)</option><option value="public">public/</option><option value="public_html">public_html/</option></select><p class="help-text">WSET oppretter ikke en ny offentlig mappe. Eksporten lager to ZIP-filer. Pakk 02-UTENFOR-WWW.zip ut i kontomappen som inneholder webroten, og 01-WWW.zip direkte i eksisterende webrot. Ingen installasjonsfiler eller automatisk utpakking på serveren.</p><div class="export-assistant-module" id="export-assistant-module">
+    <div><strong>Smart Assistant</strong><p id="export-assistant-status" role="status">Kontrollerer tilgjengelig modul …</p></div>
+    <button type="button" class="btn btn-outline" id="export-assistant-import">Importer / oppdater modul-ZIP …</button>
+   </div><p id="export-status" role="status" aria-live="polite">Velg hvor de to ZIP-filene skal lagres.</p>
+   <div id="export-bar" class="export-bar"><span></span></div>
+   <div id="export-result" hidden>
+    <p class="export-success">Nettsiden er generert.</p>
+    <p id="export-path" class="export-location"></p>
+    <p id="export-details" class="export-footnote"></p>
+    <p class="export-note" id="export-note">Kontroller SMTP-oppsett, personvernerklæring og noindex før offentlig lansering.</p>
+   </div>
+   <pre id="export-error" class="export-error" hidden></pre>
+   <div class="dialog-actions">
+    <button id="export-send-btn" type="button" class="btn btn-primary" hidden>Overfør til server</button><button id="export-reveal-btn" type="button" class="btn btn-outline" hidden>Vis ZIP-filer i mappe</button>
+    <button id="export-start-btn" type="button" class="btn btn-primary">Generer 2 ZIP-filer</button><button id="export-close-btn" type="button" class="btn btn-outline">Avbryt</button>
+   </div>
+  </div>
+ </dialog>
+ <dialog id="publication-transfer-dialog" aria-labelledby="publication-transfer-title">
+  <form id="publication-transfer-form" class="publication-transfer-form">
+   <header class="dialog-title"><h2 id="publication-transfer-title">Overfør til server</h2><button type="button" class="icon-close" id="publication-cancel" aria-label="Lukk">×</button></header>
+   <p id="publication-connection" class="help-text"></p>
+   <label>Kontomappe (utenfor webrot)<input id="publication-account" required placeholder="/home/konto"></label>
+   <label>Offentlig mappe<select id="publication-webroot"><option value="www">www/</option><option value="public">public/</option><option value="public_html">public_html/</option></select></label>
+   <div class="publication-paths" id="publication-paths"></div>
+   <div id="publication-property-options" hidden><label class="publication-check"><input type="checkbox" id="publication-replace-supplier"> Erstatt eksisterende leverandør-XML</label><label class="publication-check" id="publication-remove-label"><input type="checkbox" id="publication-remove-own"> Fjern tidligere egen XML hvis alle egne annonser er trukket tilbake</label></div>
+   <p id="publication-policy" class="help-text"></p><p id="publication-error" role="alert" hidden></p>
+   <div class="dialog-actions"><button type="button" id="publication-connect" class="btn btn-outline" hidden>Åpne Server / FTP</button><button type="submit" id="publication-start" class="btn btn-primary">Kontroller og overfør</button></div>
+  </form>
+ </dialog>
+ <dialog id="language-dialog"><form method="dialog" id="add-language-form"><div class="dialog-title"><div><span class="eyebrow">SPRÅKADMINISTRASJON</span><h2>Legg til språk</h2></div><button value="cancel" class="icon-close" formnovalidate aria-label="Lukk">×</button></div><label>Velg språk (valgfritt)<select id="xml-language-preset"><option value="">Velg språk eller angi selv</option><option value="no">Norsk</option><option value="en">English</option><option value="es">Español</option><option value="de">Deutsch</option><option value="da">Dansk</option><option value="fi">Suomi</option><option value="fr">Français</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="sv">Svenska</option><option value="ru">Русский</option></select></label><label>Språkkode (f.eks. de eller fr)<input name="code" required maxlength="20" pattern="[a-z]{2,3}(-[a-zA-Z0-9]{2,8})*" placeholder="de"></label><label>Språkets navn<input name="name" required maxlength="70" placeholder="Deutsch"></label><label>Flagg eller symbol<input name="flag" maxlength="12" placeholder="🇩🇪"></label><p class="dialog-help">Språket opprettes som upublisert utkast. Eksporter JSON-filen, oversett og importer tilbake.</p><div class="dialog-actions"><button class="btn btn-quiet" value="cancel" formnovalidate>Avbryt</button><button class="btn btn-primary" value="submit">Opprett språk</button></div></form></dialog>
+ <dialog id="mw-replace-dialog" aria-labelledby="mw-replace-title">
+  <form method="dialog" class="mw-modal-form">
+   <header class="mw-modal-head"><h2 id="mw-replace-title">Bytt bilde</h2><button class="btn btn-quiet mw-modal-close" value="cancel" formnovalidate aria-label="Lukk">×</button></header>
+   <div class="mw-modal-body">
+    <div class="mw-modal-current"><img id="mw-replace-thumb" alt=""><div><strong id="mw-replace-filename"></strong><p id="mw-replace-context" class="dialog-help"></p></div></div>
+    <label id="mw-replace-scope-label">Hvor skal bildet byttes?<select id="mw-replace-scope"></select></label><div id="mw-replace-choices" class="mw-replace-choices"></div>
+    <fieldset class="mw-source-field"><legend>Velg nytt bilde fra</legend>
+     <label class="mw-source-card"><input type="radio" name="mw-source" value="file" checked><span class="mw-source-icon" aria-hidden="true">▱</span><span><strong>Denne PC-en</strong><small>Last opp en ny bildefil</small></span></label>
+     <label class="mw-source-card"><input type="radio" name="mw-source" value="library"><span class="mw-source-icon" aria-hidden="true">▦</span><span><strong>Mediebiblioteket</strong><small>Bruk et eksisterende bilde</small></span></label>
+    </fieldset>
+    <div id="mw-replace-item-label" hidden><label for="mw-replace-search">Velg bilde</label><input id="mw-replace-search" type="search" placeholder="Søk etter bilde …"><div id="mw-replace-gallery" class="mw-replace-gallery" role="group" aria-label="Bilder i mediebiblioteket"></div></div>
+    <p class="dialog-help mw-modal-note">Originalbildet beholdes. Endringen kan angres.</p>
+   </div>
+   <footer class="mw-modal-footer"><button class="btn btn-outline" value="cancel" formnovalidate>Avbryt</button><button id="mw-replace-submit" class="btn btn-primary" value="ok">Velg bildefil</button></footer>
+  </form>
+ </dialog>
+ <dialog id="mw-remove-dialog" aria-labelledby="mw-remove-title">
+  <form method="dialog" class="mw-modal-form"><header class="mw-modal-head"><h2 id="mw-remove-title">Fjern bilde</h2><button class="btn btn-quiet mw-modal-close" value="cancel" formnovalidate aria-label="Lukk">×</button></header><div class="mw-modal-body"><div class="mw-modal-current"><img id="mw-remove-thumb" alt=""><div><strong id="mw-remove-filename"></strong><p id="mw-remove-note" class="dialog-help"></p></div></div><div id="mw-remove-refs" class="mw-remove-refs"></div></div><footer class="mw-modal-footer"><button class="btn btn-outline" value="cancel">Lukk</button><button id="mw-remove-submit" class="btn btn-primary" value="ok">Fjern</button></footer></form>
+ </dialog>
+ <dialog id="mw-category-dialog"><form method="dialog"><h2>Mediekategori</h2><label>Kategorinavn<input id="mw-category-name" required maxlength="60"></label><div class="dialog-actions"><button class="btn btn-outline" value="cancel" formnovalidate>Avbryt</button><button class="btn btn-primary" value="ok">Lagre</button></div></form></dialog>
+ <dialog id="template-library-dialog" aria-labelledby="tl-title">
+ <div class="tl-shell"><header class="tl-header"><div><span class="eyebrow">WSET</span><h2 id="tl-title">Malbibliotek</h2><p>Maler leses automatisk fra arbeidsområdets malmappe. Opprett et selvstendig nettsted fra en mal.</p></div><button id="tl-close" class="icon-close" type="button" aria-label="Lukk">×</button></header>
+ <div class="tl-toolbar"><label>Kategori<select id="tl-category"></select></label><label>Søk etter mal<input id="tl-search" type="search" placeholder="Søk etter mal"></label><button id="tl-import" type="button" class="btn btn-primary">Importer mal-ZIP</button></div>
+ <div class="tl-sync"><span id="tl-root"></span><button id="tl-folder" class="btn btn-outline" type="button">Åpne malmappe</button><button id="tl-refresh" class="btn btn-outline" type="button">Synkroniser nå</button></div><p id="tl-status" role="status" aria-live="polite"></p><div class="tl-body"><div id="tl-items" class="tl-items"></div><section id="tl-detail" class="tl-detail" aria-label="Maldetaljer"></section></div>
+ </div></dialog>
+ <dialog id="workspace-dialog" aria-labelledby="workspace-title"><div class="ws-shell"><header><h2 id="workspace-title">Arbeidsområde</h2><button id="ws-close" type="button" class="icon-close" aria-label="Lukk">×</button></header><p>Én hovedmappe for alle WSET-prosjekter, maler, moduler og lokale data.</p><div id="ws-paths"></div><p id="ws-status" role="status" aria-live="polite"></p><p class="ws-note">Alle undermapper følger hovedmappen. Ved flytting kopieres og kontrolleres data før WSET starter på nytt. Originalene beholdes.</p></div></dialog>
+ <div id="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="lw-settings-dialog"><form><div class="lw-dialog-head"><h2>Språkinnstillinger</h2><button class="icon-close" value="cancel" formnovalidate aria-label="Lukk">×</button></div><label>Språknavn<input name="name" required maxlength="70"></label><label>Undertittel<input name="subtitle" maxlength="80"></label><label>Flagg / symbol<input name="flag" maxlength="80"></label><div class="lw-flag-picker"><button type="button" data-lw-flag="🇳🇴" title="NO" aria-label="NO"><img src="./flags/no.svg" alt=""></button><button type="button" data-lw-flag="🇬🇧" title="EN" aria-label="EN"><img src="./flags/en.svg" alt=""></button><button type="button" data-lw-flag="🇪🇸" title="ES" aria-label="ES"><img src="./flags/es.svg" alt=""></button><button type="button" data-lw-flag="🇩🇪" title="DE" aria-label="DE"><img src="./flags/de.svg" alt=""></button><button type="button" data-lw-flag="🇩🇰" title="DA" aria-label="DA"><img src="./flags/da.svg" alt=""></button><button type="button" data-lw-flag="🇫🇮" title="FI" aria-label="FI"><img src="./flags/fi.svg" alt=""></button><button type="button" data-lw-flag="🇫🇷" title="FR" aria-label="FR"><img src="./flags/fr.svg" alt=""></button><button type="button" data-lw-flag="🇳🇱" title="NL" aria-label="NL"><img src="./flags/nl.svg" alt=""></button><button type="button" data-lw-flag="🇵🇱" title="PL" aria-label="PL"><img src="./flags/pl.svg" alt=""></button><button type="button" data-lw-flag="🇸🇪" title="SV" aria-label="SV"><img src="./flags/sv.svg" alt=""></button><button type="button" data-lw-flag="🇷🇺" title="RU" aria-label="RU"><img src="./flags/ru.svg" alt=""></button></div><div class="lw-settings-flag" hidden></div><div class="lw-dialog-order"><button type="button" class="btn btn-outline" data-lw-move="-1">↑ Flytt opp</button><button type="button" class="btn btn-outline" data-lw-move="1">↓ Flytt ned</button><button type="button" class="danger-button" data-lw-remove>Fjern språk</button></div><div class="dialog-actions"><button class="btn btn-outline" value="cancel" formnovalidate>Avbryt</button><button class="btn btn-primary" value="save">Bruk endringer</button></div></form></dialog>
+<dialog id="translation-settings-dialog" aria-labelledby="translation-title"><div class="tr-settings"><header><h2 id="translation-title">Oversettelse</h2><button type="button" class="icon-close" id="tr-close" aria-label="Lukk">×</button></header><label>Oversettelsesmotor<select id="tr-provider"><option value="ollama-translategemma">TranslateGemma – lokal (Ollama)</option></select></label><label>Modell<select id="tr-model"><option value="translategemma:4b">4B – ca. 3,3 GB (anbefalt)</option><option value="translategemma:12b">12B – ca. 8,1 GB</option><option value="translategemma:27b">27B – ca. 17 GB</option></select></label><div class="tr-languages"><label>Maskinvare<select id="tr-hardware"><option value="auto">Automatisk</option><option value="cuda">NVIDIA CUDA</option><option value="vulkan">Vulkan</option><option value="cpu">CPU</option></select></label><label>Behold modell innlastet<select id="tr-keep"><option value="5m">5 minutter</option><option value="15m">15 minutter</option><option value="30m">30 minutter</option><option value="-1">Uten tidsgrense</option></select></label></div><div class="tr-choices"><label><input type="checkbox" id="tr-fallback"> Prøv alternativ maskinvare ved modellfeil</label><label><input type="checkbox" id="tr-preload"> Forhåndslast ved oppstart av WSET</label><label><input type="checkbox" id="tr-cache"> Gjenbruk identiske oversettelser i denne økten</label></div><div class="tr-actions"><button class="btn btn-outline" id="tr-warm">Last modell i minnet</button></div><p id="tr-runtime" role="status"></p><p id="tr-status" role="status"></p><div id="tr-progress" hidden><div class="tr-progress-top"><span id="tr-phase"></span><strong id="tr-percent"></strong></div><progress id="tr-bar" max="100" aria-label="Modellnedlasting"></progress><div class="tr-progress-top"><span id="tr-bytes"></span><span id="tr-speed"></span></div><span id="tr-eta"></span><button class="btn btn-outline" id="tr-cancel">Avbryt nedlasting</button></div><div class="tr-actions"><button class="btn btn-outline" id="tr-refresh">Kontroller status</button><button class="btn btn-outline" id="tr-download">Installer Ollama</button><button class="btn btn-primary" id="tr-install">Last ned modell</button></div><p class="pd-note">Modellen installeres én gang per PC. Teksten oversettes lokalt, uten API-nøkkel. Ingen modellfiler eller motorinnstillinger eksporteres.</p><hr><details id="tr-test-details"><summary>Test oversettelse</summary><div class="tr-test-body"><div class="tr-languages"><label>Fra<select id="tr-source"></select></label><label>Til<select id="tr-target"></select></label></div><label>Tekst<textarea id="tr-input" rows="3" maxlength="6000">Boligen har tre soverom og privat basseng.</textarea></label><button class="btn btn-primary" id="tr-test">Test oversettelse</button><p id="tr-test-status" role="status" aria-live="polite"></p><label>Resultat<textarea id="tr-output" rows="3" readonly></textarea></label></div></details></div></dialog>
+</body>
+</html>

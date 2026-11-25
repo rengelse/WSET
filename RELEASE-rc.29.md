@@ -1,0 +1,14 @@
+# WSET v1.4.4-rc.29 – Media Workspace Redesign
+
+Base: rc.28. Dedicated media workspace, matching approved direction. No changes to website engine, property module or publication engine.
+
+- One shared originals directory for all newly imported website media, including logo imports; generated variants stay in public/assets. Existing template assets remain in place (not reclassified as original source files).
+- Dynamic catalogue of flat supported image files in public/assets plus registered images. Variant files do not appear as separate entries. No scans of property-feeds, XML imports, nested property images, or remote property sources.
+- Automatic categories from explicit content references and rendered static content; custom categories and multiple assignments in project media.workspace; removing a category does not remove files. Render inspection is based on the existing WSET compatibility engine and default language; usage is conservative, including hidden content. Unknown custom template references may not be recognized.
+- Independent gallery/list with search, usage filters, sorting, pagination and conditional details. Batch photo and logo import. File info, references, focal point, registered media replacement and save original. Existing image picker prioritizes contextual categories but retains all eligible images. Alt text controls only for actual imageText and gallery occurrences supported by current engine. Static template alt text remains in the existing content workflow.
+- Registered unused media may be removed from catalogue only; files remain for undo. Existing template files are protected. Replacement creates new files, keeps ID, rebinds exact existing content paths and keeps old files for undo. No automatic physical cleanup. Existing focal point regeneration behavior is retained.
+- New UI strings are Norwegian; full EN/ES localization of new workspace remains.
+
+Changed: designer/core/media-catalog.mjs (new), media-library.mjs, content-commands.mjs; designer/main.cjs, preload.cjs, ui/app.js, index.html, style.css; package.json, README.md; new tests/media-workspace-rc29.test.mjs and tests/media-workspace-rc29-browser.py.
+
+Verification in container Node v22.16.0 (below declared Windows target): core 36 passed, 0 failed, 1 skipped; full suite 38 passed, 4 failed due to unavailable external CBPM website/Smart Assistant fixture paths, 5 skipped. Chromium with mock IPC: new media test, workspace navigation regression, property workspace regression passed. Actual supplied CBPM rc.27 archive inventory: 21 website images recognized. Sharp not installed in test environment; native import/replace, image dimensions via Sharp, focal generation, Windows/Electron dialogs and actual export after editing remain to be verified. No claims of full end-to-end verification.

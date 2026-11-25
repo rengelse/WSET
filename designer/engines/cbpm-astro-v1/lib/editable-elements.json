@@ -1,0 +1,11 @@
+{
+  "schema": "wset-editable-elements-v1",
+  "engine": "cbpm-astro-v1",
+  "version": 1,
+  "scope": "static-main-sections",
+  "recordAttribute": "data-content-id",
+  "fieldAttribute": "data-content-ref",
+  "teamAttribute": "data-team-id",
+  "templateTextIdentity": "section-local-structure-v1",
+  "publication": "wset-manual-two-zip"
+}

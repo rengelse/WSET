@@ -1,0 +1,7 @@
+{
+  "id": "cbpm-astro-v1",
+  "formatVersion": 1,
+  "name": "CBPM Astro compatibility engine",
+  "status": "compatibility",
+  "source": "Built-in WSET editor adapter. CBPM source is maintained separately in CBPM-Website."
+}
